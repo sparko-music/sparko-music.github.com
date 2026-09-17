@@ -279,3 +279,171 @@ footer p {
     }
 
 }
+/* =========================
+   SECCIÓN DE MÚSICA
+========================= */
+
+.music-intro {
+    text-align: center;
+    color: #aaa3b8;
+    margin: -10px auto 30px;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px auto 45px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ddd6e8;
+    border: 1px solid rgba(168, 85, 247, 0.35);
+    background: rgba(168, 85, 247, 0.08);
+    padding: 10px 17px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: white;
+    background: rgba(168, 85, 247, 0.2);
+    border-color: #a855f7;
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.25);
+}
+
+
+/* GRID DE CANCIONES */
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+/* TARJETAS */
+
+.music-card {
+    position: relative;
+    padding: 25px;
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(168, 85, 247, 0.09),
+            rgba(8, 6, 13, 0.75)
+        );
+
+    border: 1px solid rgba(168, 85, 247, 0.18);
+
+    transition: 0.35s ease;
+    overflow: hidden;
+}
+
+.music-card::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+
+    top: -70px;
+    right: -50px;
+
+    background: #a855f7;
+    opacity: 0.08;
+
+    border-radius: 50%;
+    filter: blur(30px);
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(168, 85, 247, 0.5);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+.music-card h3 {
+    position: relative;
+    margin: 0 0 7px;
+
+    color: #ffffff;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+.music-card p {
+    position: relative;
+    margin: 0 0 20px;
+
+    color: #91899d;
+    font-size: 0.78rem;
+}
+
+
+/* BOTONES DE PLATAFORMAS */
+
+.music-buttons {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.music-buttons a {
+    text-decoration: none;
+
+    color: #cfc6da;
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    background: rgba(255, 255, 255, 0.035);
+
+    padding: 8px 12px;
+    border-radius: 9px;
+
+    font-size: 0.72rem;
+
+    transition: 0.3s ease;
+}
+
+.music-buttons a:hover {
+    color: white;
+    border-color: #a855f7;
+    background: rgba(168, 85, 247, 0.16);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+
+    .music-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .music-card {
+        padding: 21px;
+    }
+
+    .social-links {
+        gap: 8px;
+        margin-bottom: 35px;
+    }
+
+    .social-links a {
+        padding: 9px 13px;
+        font-size: 0.7rem;
+    }
+
+}
