@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #08060d;
+    color: #f4f0ff;
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Fondo */
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    background: #7b2cff;
+    opacity: 0.12;
+    filter: blur(130px);
+    top: -150px;
+    right: -150px;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    background: #a855f7;
+    opacity: 0.08;
+    filter: blur(120px);
+    bottom: -150px;
+    left: -100px;
+    pointer-events: none;
+}
+
+/* Contenedor */
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+/* Navegación */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 22px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(8, 6, 13, 0.75);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(168, 85, 247, 0.15);
+    z-index: 1000;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+nav a {
+    color: #aaa2b8;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+/* Portada */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 50px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    color: #a855f7;
+    letter-spacing: 5px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(4rem, 15vw, 9rem);
+    line-height: 0.9;
+    letter-spacing: -5px;
+    font-weight: 700;
+}
+
+.hero h1 span {
+    color: #a855f7;
+    text-shadow: 0 0 40px rgba(168, 85, 247, 0.45);
+}
+
+.subtitle {
+    color: #aaa2b8;
+    font-size: 1rem;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.enter {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 15px 30px;
+    border: 1px solid #a855f7;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.enter:hover {
+    background: #a855f7;
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.4);
+}
+
+/* Secciones */
+
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    color: #a855f7;
+}
+
+/* Tarjetas */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.card {
+    padding: 35px;
+    min-height: 180px;
+    border: 1px solid rgba(168, 85, 247, 0.18);
+    background: rgba(255, 255, 255, 0.025);
+    border-radius: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.35s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(168, 85, 247, 0.7);
+    background: rgba(168, 85, 247, 0.08);
+}
+
+.card .number {
+    color: #a855f7;
+    font-size: 0.75rem;
+}
+
+.card h3 {
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #938b9f;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+
+footer {
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(168, 85, 247, 0.12);
+    color: #756d80;
+    font-size: 0.8rem;
+}
+
+footer span {
+    color: #a855f7;
+}
+
+/* Teléfono */
+
+@media (max-width: 650px) {
+
+    nav {
+        padding: 18px 5%;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .subtitle {
+        line-height: 1.8;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 75px 0;
+    }
+}
