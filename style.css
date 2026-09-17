@@ -153,3 +153,58 @@ footer p {
     }
 
 }
+/* Música */
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.music-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.025);
+    padding: 14px;
+    transition: 0.3s ease;
+}
+
+.music-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(156, 108, 255, 0.6);
+}
+
+.music-cover {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background:
+        radial-gradient(circle, #34205c, #100b18 70%);
+    margin-bottom: 18px;
+}
+
+.music-info span {
+    color: #9c6cff;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.music-info h3 {
+    margin: 7px 0 4px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.music-info p {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
