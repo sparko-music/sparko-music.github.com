@@ -447,3 +447,211 @@ footer p {
     }
 
 }
+/* =========================
+   PENSAMIENTOS / PUBLICACIONES
+========================= */
+
+.thoughts-intro {
+    text-align: center;
+    color: #aaa3b8;
+    max-width: 600px;
+    margin: -10px auto 40px;
+    font-size: 0.9rem;
+}
+
+.thoughts-list {
+    max-width: 850px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.thought-post {
+    position: relative;
+
+    padding: 26px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(168, 85, 247, 0.08),
+            rgba(8, 6, 13, 0.82)
+        );
+
+    border: 1px solid rgba(168, 85, 247, 0.18);
+
+    overflow: hidden;
+
+    transition: 0.35s ease;
+}
+
+.thought-post::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    top: -90px;
+    right: -70px;
+
+    background: #a855f7;
+
+    opacity: 0.08;
+
+    border-radius: 50%;
+
+    filter: blur(35px);
+
+    pointer-events: none;
+}
+
+.thought-post:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(168, 85, 247, 0.45);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+/* PARTE SUPERIOR */
+
+.post-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.post-number {
+    color: #a855f7;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+}
+
+.post-date {
+    color: #777080;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 1px;
+}
+
+
+/* TÍTULO */
+
+.thought-post h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-size: 1.35rem;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* PREVIEW */
+
+.post-preview {
+    color: #aaa3b8;
+
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+}
+
+
+/* BOTÓN LEER */
+
+.thought-post details {
+    position: relative;
+}
+
+.thought-post summary {
+    display: inline-block;
+
+    cursor: pointer;
+
+    color: #c084fc;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 1px;
+
+    list-style: none;
+
+    transition: 0.3s ease;
+}
+
+.thought-post summary::-webkit-details-marker {
+    display: none;
+}
+
+.thought-post summary:hover {
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+
+/* CONTENIDO */
+
+.post-content {
+    margin-top: 25px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.post-content p {
+    color: #c4bdcc;
+
+    font-size: 0.9rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.post-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+    .thought-post {
+        padding: 21px;
+    }
+
+    .thought-post h3 {
+        font-size: 1.15rem;
+    }
+
+    .post-content p {
+        font-size: 0.85rem;
+        line-height: 1.8;
+    }
+
+}
