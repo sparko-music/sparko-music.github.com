@@ -655,3 +655,237 @@ footer p {
     }
 
 }
+/* =========================
+   LATEST RELEASE
+========================= */
+
+.latest-release {
+    position: relative;
+
+    max-width: 850px;
+    margin: 40px auto 60px;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(168, 85, 247, 0.16),
+            rgba(8, 6, 13, 0.9)
+        );
+
+    border: 1px solid rgba(168, 85, 247, 0.35);
+
+    overflow: hidden;
+}
+
+.latest-release::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: 30px;
+    bottom: 15px;
+
+    font-size: 5rem;
+
+    color: rgba(168, 85, 247, 0.08);
+}
+
+.release-label {
+    display: block;
+
+    color: #a855f7;
+
+    font-size: 0.68rem;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+.latest-release .track-number {
+    color: #777080;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 2px;
+}
+
+.latest-release h3 {
+    margin: 8px 0 5px;
+
+    color: white;
+
+    font-size: 2.2rem;
+
+    letter-spacing: 1px;
+}
+
+.release-artist {
+    color: #c084fc;
+
+    font-size: 0.85rem;
+}
+
+.release-description {
+    max-width: 500px;
+
+    color: #aaa3b8;
+
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+
+    margin: 20px 0 25px;
+}
+
+
+/* =========================
+   DISCOGRAFÍA
+========================= */
+
+.discography {
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+}
+
+.discography-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    color: #777080;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 2px;
+}
+
+.archive-track {
+    display: grid;
+
+    grid-template-columns: 45px 1fr auto;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 8px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+
+    transition: 0.3s ease;
+}
+
+.archive-track:hover {
+    padding-left: 15px;
+
+    background: rgba(168,85,247,0.04);
+}
+
+.archive-number {
+    color: #6f6878;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 1px;
+}
+
+.archive-info h3 {
+    margin: 0 0 5px;
+
+    color: #eee;
+
+    font-size: 0.95rem;
+
+    font-weight: 500;
+}
+
+.archive-info p {
+    margin: 0;
+
+    color: #777080;
+
+    font-size: 0.7rem;
+}
+
+.archive-track > a,
+.archive-links a {
+    text-decoration: none;
+
+    color: #aaa3b8;
+
+    font-size: 0.85rem;
+
+    padding: 7px 10px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.archive-track > a:hover,
+.archive-links a:hover {
+    color: white;
+
+    border-color: #a855f7;
+
+    background: rgba(168,85,247,0.12);
+}
+
+.archive-links {
+    display: flex;
+
+    gap: 7px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+    .latest-release {
+        padding: 25px;
+
+        margin-top: 30px;
+    }
+
+    .latest-release h3 {
+        font-size: 1.7rem;
+    }
+
+    .discography-header {
+        font-size: 0.55rem;
+    }
+
+    .archive-track {
+        grid-template-columns: 30px 1fr auto;
+
+        gap: 10px;
+
+        padding: 16px 3px;
+    }
+
+    .archive-info h3 {
+        font-size: 0.82rem;
+    }
+
+    .archive-info p {
+        font-size: 0.65rem;
+    }
+
+    }
