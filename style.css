@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
 
+
+/* =========================================
+   BASE
+========================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +13,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -24,59 +30,56 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
+
     pointer-events: none;
+
     background:
-        radial-gradient(circle at 20% 10%, rgba(142, 70, 255, 0.16), transparent 30%),
-        radial-gradient(circle at 80% 80%, rgba(85, 30, 160, 0.12), transparent 35%);
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(142, 70, 255, 0.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(85, 30, 160, 0.13),
+            transparent 35%
+        );
+
     z-index: -1;
 }
 
-/* Contenedor principal */
 
-main {
-    width: min(900px, 100%);
-    margin: auto;
-    padding: 70px 22px;
-}
-
-/* Títulos */
+/* =========================================
+   TIPOGRAFÍA
+========================================= */
 
 h1 {
     font-family: 'Playfair Display', serif;
+
     font-size: clamp(3rem, 13vw, 7rem);
+
     line-height: 0.95;
     font-weight: 500;
+
     letter-spacing: -3px;
+
     margin-bottom: 25px;
 }
 
 h2 {
     font-size: clamp(1.7rem, 6vw, 3rem);
+
     font-weight: 500;
+
     margin-bottom: 20px;
+
+    letter-spacing: -1px;
 }
 
 p {
     line-height: 1.8;
     color: #aaa3b8;
 }
-
-/* Secciones */
-
-section {
-    padding: 90px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.section-number {
-    color: #9c6cff;
-    font-size: 0.75rem;
-    letter-spacing: 3px;
-    margin-bottom: 18px;
-    text-transform: uppercase;
-}
-
-/* Links */
 
 a {
     color: #c8aaff;
@@ -87,133 +90,22 @@ a:hover {
     color: #ffffff;
 }
 
-/* Hero */
-
-header {
-    min-height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-header p {
-    font-size: 1.05rem;
-    letter-spacing: 1px;
-}
-
-/* Efecto lunar */
-
-h1::after {
-    content: "☾";
-    display: block;
-    color: #9c6cff;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    margin-top: 15px;
-}
-
-/* Footer */
-
-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 35px 22px;
-    text-align: center;
-}
-
-footer p {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-}
-
-/* Selección de texto */
-
 ::selection {
     background: #8c52ff;
     color: white;
 }
 
-/* Móvil */
 
-@media (max-width: 600px) {
-
-    main {
-        padding: 45px 20px;
-    }
-
-    header {
-        min-height: 75vh;
-    }
-
-    section {
-        padding: 70px 0;
-    }
-
-    h1 {
-        letter-spacing: -2px;
-    }
-
-}
-/* Música */
-
-.music-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-top: 40px;
-}
-
-.music-card {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.025);
-    padding: 14px;
-    transition: 0.3s ease;
-}
-
-.music-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(156, 108, 255, 0.6);
-}
-
-.music-cover {
-    aspect-ratio: 1 / 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    background:
-        radial-gradient(circle, #34205c, #100b18 70%);
-    margin-bottom: 18px;
-}
-
-.music-info span {
-    color: #9c6cff;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-}
-
-.music-info h3 {
-    margin: 7px 0 4px;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.music-info p {
-    font-size: 0.8rem;
-}
-
-@media (max-width: 600px) {
-
-    .music-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-/* NAVBAR */
+/* =========================================
+   NAVBAR
+========================================= */
 
 .navbar {
     position: fixed;
+
     top: 0;
     left: 0;
+
     width: 100%;
     height: 70px;
 
@@ -224,7 +116,9 @@ footer p {
     padding: 0 6%;
 
     background: rgba(8, 6, 13, 0.72);
+
     backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
     border-bottom: 1px solid rgba(156, 108, 255, 0.15);
 
@@ -233,10 +127,13 @@ footer p {
 
 .nav-logo {
     color: #ffffff;
+
     font-size: 1.2rem;
     font-weight: 700;
+
     letter-spacing: 2px;
-    text-decoration: none;
+
+    transition: 0.3s ease;
 }
 
 .nav-logo:hover {
@@ -250,9 +147,10 @@ footer p {
 
 .nav-links a {
     color: #aaa3b8;
+
     font-size: 0.75rem;
+
     letter-spacing: 1px;
-    text-decoration: none;
 
     transition: 0.3s ease;
 }
@@ -261,219 +159,707 @@ footer p {
     color: #c084fc;
 }
 
-/* CELULAR */
 
-@media (max-width: 650px) {
+/* =========================================
+   CONTENIDO
+========================================= */
 
-    .navbar {
-        height: 60px;
-        padding: 0 20px;
-    }
+main {
+    width: min(1000px, 100%);
 
-    .nav-links {
-        gap: 12px;
-    }
+    margin: auto;
 
-    .nav-links a {
-        font-size: 0.62rem;
-    }
-
+    padding: 70px 22px;
 }
-/* =========================
-   SECCIÓN DE MÚSICA
-========================= */
+
+section {
+    padding: 100px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.section-number {
+    color: #9c6cff;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+header {
+    min-height: 85vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 90px 22px 40px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+header p {
+    font-size: 1.05rem;
+
+    letter-spacing: 1px;
+}
+
+h1::after {
+    content: "☾";
+
+    display: block;
+
+    color: #9c6cff;
+
+    font-family: sans-serif;
+
+    font-size: 0.5em;
+
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   MÚSICA
+========================================= */
 
 .music-intro {
     text-align: center;
+
     color: #aaa3b8;
-    margin: -10px auto 30px;
+
+    max-width: 600px;
+
+    margin: -8px auto 45px;
+
     font-size: 0.9rem;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin: 25px auto 45px;
-}
 
-.social-links a {
-    text-decoration: none;
-    color: #ddd6e8;
-    border: 1px solid rgba(168, 85, 247, 0.35);
-    background: rgba(168, 85, 247, 0.08);
-    padding: 10px 17px;
-    border-radius: 999px;
-    font-size: 0.78rem;
-    transition: 0.3s ease;
-}
+/* =========================================
+   LATEST RELEASE
+========================================= */
 
-.social-links a:hover {
-    color: white;
-    background: rgba(168, 85, 247, 0.2);
-    border-color: #a855f7;
-    transform: translateY(-3px);
-    box-shadow: 0 0 18px rgba(168, 85, 247, 0.25);
-}
-
-
-/* GRID DE CANCIONES */
-
-.music-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-    max-width: 950px;
-    margin: 0 auto;
-}
-
-
-/* TARJETAS */
-
-.music-card {
+.latest-release {
     position: relative;
-    padding: 25px;
-    border-radius: 18px;
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    gap: 45px;
+
+    align-items: center;
+
+    max-width: 920px;
+
+    margin: 45px auto 75px;
+
+    padding: 35px;
+
+    overflow: hidden;
 
     background:
         linear-gradient(
-            145deg,
-            rgba(168, 85, 247, 0.09),
-            rgba(8, 6, 13, 0.75)
+            135deg,
+            rgba(168, 85, 247, 0.13),
+            rgba(8, 6, 13, 0.92)
         );
 
-    border: 1px solid rgba(168, 85, 247, 0.18);
+    border: 1px solid rgba(168, 85, 247, 0.25);
 
-    transition: 0.35s ease;
-    overflow: hidden;
+    border-radius: 26px;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.4),
+        inset 0 0 60px rgba(168, 85, 247, 0.025);
+
+    transition: 0.4s ease;
 }
 
-.music-card::before {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 120px;
+.latest-release:hover {
+    border-color: rgba(168, 85, 247, 0.45);
 
-    top: -70px;
-    right: -50px;
+    box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.5),
+        0 0 50px rgba(168, 85, 247, 0.06);
+}
+
+
+/* brillo */
+
+.latest-release::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -130px;
+    right: -80px;
 
     background: #a855f7;
+
     opacity: 0.08;
 
     border-radius: 50%;
-    filter: blur(30px);
+
+    filter: blur(50px);
+
+    pointer-events: none;
 }
 
-.music-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(168, 85, 247, 0.5);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+.latest-release::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: 25px;
+    bottom: 10px;
+
+    color: rgba(168, 85, 247, 0.08);
+
+    font-size: 5rem;
+
+    pointer-events: none;
 }
 
-.music-card h3 {
+
+/* portada principal */
+
+.release-cover {
+    width: 300px;
+    height: 300px;
+
+    max-width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.55),
+        0 0 35px rgba(168, 85, 247, 0.1);
+
+    transition: 0.4s ease;
+}
+
+.latest-release:hover .release-cover {
+    transform: scale(1.025);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.6),
+        0 0 45px rgba(168, 85, 247, 0.15);
+}
+
+
+/* información */
+
+.release-info {
     position: relative;
-    margin: 0 0 7px;
 
+    min-width: 0;
+
+    z-index: 2;
+}
+
+.release-label {
+    display: block;
+
+    color: #a855f7;
+
+    font-size: 0.65rem;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+.track-number {
+    display: block;
+
+    color: #625b6d;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+.release-info h3 {
     color: #ffffff;
-    font-size: 1.15rem;
-    letter-spacing: 0.5px;
+
+    font-size: clamp(2rem, 5vw, 4rem);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin: 0;
 }
 
-.music-card p {
-    position: relative;
-    margin: 0 0 20px;
+.release-artist {
+    margin: 13px 0;
 
-    color: #91899d;
-    font-size: 0.78rem;
+    color: #c084fc;
+
+    font-size: 0.85rem;
+
+    letter-spacing: 2px;
+}
+
+.release-description {
+    max-width: 570px;
+
+    margin: 20px 0;
+
+    color: #aaa3b8;
+
+    font-size: 0.85rem;
+
+    line-height: 1.75;
 }
 
 
-/* BOTONES DE PLATAFORMAS */
+/* metadata */
+
+.release-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 22px 0;
+}
+
+.release-meta span {
+    padding: 7px 11px;
+
+    color: #aaa3b8;
+
+    font-size: 0.6rem;
+
+    letter-spacing: 1px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(168, 85, 247, 0.16);
+
+    border-radius: 999px;
+}
+
+
+/* =========================================
+   BOTONES MÚSICA
+========================================= */
 
 .music-buttons {
-    position: relative;
-
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 9px;
+
+    margin-top: 25px;
 }
 
 .music-buttons a {
-    text-decoration: none;
+    display: inline-flex;
 
-    color: #cfc6da;
+    align-items: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.09);
-    background: rgba(255, 255, 255, 0.035);
+    justify-content: center;
 
-    padding: 8px 12px;
-    border-radius: 9px;
+    padding: 10px 15px;
+
+    color: #ddd7e5;
 
     font-size: 0.72rem;
+
+    background: rgba(168, 85, 247, 0.07);
+
+    border: 1px solid rgba(168, 85, 247, 0.22);
+
+    border-radius: 10px;
 
     transition: 0.3s ease;
 }
 
 .music-buttons a:hover {
     color: white;
+
+    background: rgba(168, 85, 247, 0.18);
+
+    border-color: rgba(192, 132, 252, 0.55);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.1);
+}
+
+
+/* =========================================
+   ARCHIVO / DISCOGRAFÍA
+========================================= */
+
+.discography {
+    width: 100%;
+
+    margin: 0 auto 60px;
+}
+
+.discography-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 0 5px 14px;
+
+    margin-bottom: 5px;
+
+    color: #625b6d;
+
+    font-size: 0.62rem;
+
+    letter-spacing: 2px;
+
+    border-bottom: 1px solid rgba(168, 85, 247, 0.14);
+}
+
+
+/* cada canción */
+
+.archive-track {
+    display: grid;
+
+    grid-template-columns:
+        72px
+        34px
+        minmax(150px, 1fr)
+        minmax(230px, 1.5fr)
+        45px;
+
+    gap: 18px;
+
+    align-items: center;
+
+    padding: 20px 8px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+
+    border-radius: 14px;
+
+    transition: 0.35s ease;
+}
+
+.archive-track:hover {
+    background: rgba(168, 85, 247, 0.045);
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* mini portada */
+
+.archive-cover {
+    width: 72px;
+    height: 72px;
+
+    min-width: 72px;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 11px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.4);
+
+    transition: 0.35s ease;
+}
+
+.archive-track:hover .archive-cover {
+    transform: scale(1.045);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(168, 85, 247, 0.12);
+}
+
+
+/* número */
+
+.archive-number {
+    color: #514b59;
+
+    font-size: 0.68rem;
+
+    letter-spacing: 1px;
+}
+
+
+/* título */
+
+.archive-info {
+    min-width: 0;
+}
+
+.archive-info h3 {
+    margin: 0 0 6px;
+
+    color: #eeeaf2;
+
+    font-size: 0.92rem;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    overflow-wrap: anywhere;
+}
+
+.archive-info p {
+    margin: 0;
+
+    color: #716a79;
+
+    font-size: 0.62rem;
+
+    line-height: 1.5;
+}
+
+
+/* detalles */
+
+.archive-details {
+    min-width: 0;
+}
+
+.archive-details > span:not(.credits) {
+    display: inline-block;
+
+    margin-right: 9px;
+
+    color: #716a79;
+
+    font-size: 0.59rem;
+
+    letter-spacing: 0.8px;
+}
+
+.archive-details p {
+    margin: 7px 0;
+
+    color: #918a99;
+
+    font-size: 0.68rem;
+
+    line-height: 1.5;
+}
+
+.archive-details .credits {
+    display: block;
+
+    color: #514b59;
+
+    font-size: 0.5rem;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.25px;
+}
+
+
+/* botones archivo */
+
+.archive-links {
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.archive-links a {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #aaa3b8;
+
+    font-size: 0.75rem;
+
+    background: rgba(168, 85, 247, 0.045);
+
+    border: 1px solid rgba(168, 85, 247, 0.18);
+
+    border-radius: 50%;
+
+    transition: 0.3s ease;
+}
+
+.archive-links a:hover {
+    color: #ffffff;
+
+    background: rgba(168, 85, 247, 0.17);
+
     border-color: #a855f7;
-    background: rgba(168, 85, 247, 0.16);
+
+    transform: translateY(-2px);
 }
 
 
-/* CELULAR */
+/* =========================================
+   DIVISORES EP / SINGLES
+========================================= */
 
-@media (max-width: 650px) {
+.archive-divider {
+    display: flex;
 
-    .music-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
+    align-items: center;
 
-    .music-card {
-        padding: 21px;
-    }
+    gap: 18px;
 
-    .social-links {
-        gap: 8px;
-        margin-bottom: 35px;
-    }
+    margin: 50px 0 8px;
 
-    .social-links a {
-        padding: 9px 13px;
-        font-size: 0.7rem;
-    }
+    color: #a855f7;
 
+    font-size: 0.62rem;
+
+    letter-spacing: 3px;
 }
-/* =========================
-   PENSAMIENTOS / PUBLICACIONES
-========================= */
+
+.archive-divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(168, 85, 247, 0.3),
+            transparent
+        );
+}
+
+
+/* =========================================
+   REDES
+========================================= */
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 25px auto 20px;
+}
+
+.social-links a {
+    padding: 10px 16px;
+
+    color: #ddd6e8;
+
+    font-size: 0.72rem;
+
+    background: rgba(168, 85, 247, 0.07);
+
+    border: 1px solid rgba(168, 85, 247, 0.25);
+
+    border-radius: 999px;
+
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: white;
+
+    background: rgba(168, 85, 247, 0.2);
+
+    border-color: #a855f7;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.2);
+}
+
+
+/* =========================================
+   PENSAMIENTOS
+========================================= */
 
 .thoughts-intro {
     text-align: center;
+
     color: #aaa3b8;
+
     max-width: 600px;
-    margin: -10px auto 40px;
+
+    margin: -8px auto 40px;
+
     font-size: 0.9rem;
 }
 
 .thoughts-list {
     max-width: 850px;
-    margin: 0 auto;
+
+    margin: auto;
 
     display: flex;
+
     flex-direction: column;
+
     gap: 22px;
 }
 
 .thought-post {
     position: relative;
 
-    padding: 26px;
+    padding: 27px;
 
-    border-radius: 18px;
+    overflow: hidden;
 
     background:
         linear-gradient(
@@ -484,7 +870,7 @@ footer p {
 
     border: 1px solid rgba(168, 85, 247, 0.18);
 
-    overflow: hidden;
+    border-radius: 18px;
 
     transition: 0.35s ease;
 }
@@ -520,13 +906,11 @@ footer p {
         0 12px 35px rgba(0, 0, 0, 0.3);
 }
 
-
-/* PARTE SUPERIOR */
-
 .post-top {
     display: flex;
 
     justify-content: space-between;
+
     align-items: center;
 
     margin-bottom: 16px;
@@ -550,9 +934,6 @@ footer p {
     letter-spacing: 1px;
 }
 
-
-/* TÍTULO */
-
 .thought-post h3 {
     margin: 0 0 10px;
 
@@ -563,9 +944,6 @@ footer p {
     letter-spacing: 0.3px;
 }
 
-
-/* PREVIEW */
-
 .post-preview {
     color: #aaa3b8;
 
@@ -575,9 +953,6 @@ footer p {
 
     margin-bottom: 18px;
 }
-
-
-/* BOTÓN LEER */
 
 .thought-post details {
     position: relative;
@@ -609,9 +984,6 @@ footer p {
     transform: translateX(4px);
 }
 
-
-/* CONTENIDO */
-
 .post-content {
     margin-top: 25px;
 
@@ -635,11 +1007,257 @@ footer p {
 }
 
 
-/* =========================
+/* =========================================
+   VIDA / ARTE / RANDOM
+========================================= */
+
+#arte,
+#vida,
+#random {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+#arte p:not(.section-number),
+#vida p:not(.section-number),
+#random p:not(.section-number) {
+    max-width: 650px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    padding: 35px 22px;
+
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8rem;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .latest-release {
+        grid-template-columns: 230px 1fr;
+
+        gap: 30px;
+
+        padding: 28px;
+    }
+
+    .release-cover {
+        width: 230px;
+        height: 230px;
+    }
+
+    .archive-track {
+        grid-template-columns:
+            62px
+            28px
+            minmax(130px, 1fr)
+            minmax(170px, 1.2fr)
+            42px;
+
+        gap: 13px;
+    }
+
+    .archive-cover {
+        width: 62px;
+        height: 62px;
+
+        min-width: 62px;
+    }
+}
+
+
+/* =========================================
    CELULAR
-========================= */
+========================================= */
 
 @media (max-width: 650px) {
+
+    html {
+        scroll-padding-top: 65px;
+    }
+
+    .navbar {
+        height: 60px;
+
+        padding: 0 18px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.58rem;
+
+        letter-spacing: 0.5px;
+    }
+
+    .nav-logo {
+        font-size: 1rem;
+    }
+
+
+    main {
+        padding: 45px 18px;
+    }
+
+    header {
+        min-height: 75vh;
+
+        padding: 80px 18px 30px;
+    }
+
+    section {
+        padding: 75px 0;
+    }
+
+
+    /* latest */
+
+    .latest-release {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 20px;
+
+        margin-top: 35px;
+
+        border-radius: 21px;
+    }
+
+    .release-cover {
+        width: min(100%, 290px);
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+
+        margin: auto;
+    }
+
+    .release-info h3 {
+        font-size: 2.5rem;
+
+        letter-spacing: -1.5px;
+    }
+
+    .release-description {
+        font-size: 0.8rem;
+    }
+
+
+    /* archive */
+
+    .discography-header {
+        font-size: 0.52rem;
+
+        letter-spacing: 1.5px;
+    }
+
+    .archive-track {
+        grid-template-columns:
+            62px
+            1fr
+            38px;
+
+        gap: 12px;
+
+        padding: 18px 3px;
+    }
+
+    .archive-cover {
+        width: 62px;
+        height: 62px;
+
+        min-width: 62px;
+    }
+
+    .archive-number {
+        display: none;
+    }
+
+    .archive-info {
+        grid-column: 2;
+    }
+
+    .archive-info h3 {
+        font-size: 0.82rem;
+    }
+
+    .archive-info p {
+        font-size: 0.6rem;
+    }
+
+    .archive-links {
+        grid-column: 3;
+
+        grid-row: 1;
+
+        justify-content: flex-end;
+    }
+
+    .archive-details {
+        grid-column: 2 / 4;
+
+        grid-row: 2;
+
+        padding-top: 2px;
+    }
+
+    .archive-details > span:not(.credits) {
+        font-size: 0.54rem;
+    }
+
+    .archive-details p {
+        font-size: 0.63rem;
+    }
+
+    .archive-details .credits {
+        font-size: 0.47rem;
+    }
+
+
+    /* divisores */
+
+    .archive-divider {
+        margin: 40px 0 8px;
+
+        font-size: 0.57rem;
+    }
+
+
+    /* redes */
+
+    .social-links {
+        gap: 7px;
+    }
+
+    .social-links a {
+        padding: 8px 11px;
+
+        font-size: 0.62rem;
+    }
+
+
+    /* pensamientos */
 
     .thought-post {
         padding: 21px;
@@ -651,668 +1269,52 @@ footer p {
 
     .post-content p {
         font-size: 0.85rem;
+
         line-height: 1.8;
     }
-
-}
-/* =========================
-   LATEST RELEASE
-========================= */
-
-.latest-release {
-    position: relative;
-
-    max-width: 850px;
-    margin: 40px auto 60px;
-
-    padding: 35px;
-
-    border-radius: 22px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(168, 85, 247, 0.16),
-            rgba(8, 6, 13, 0.9)
-        );
-
-    border: 1px solid rgba(168, 85, 247, 0.35);
-
-    overflow: hidden;
-}
-
-.latest-release::after {
-    content: "✦";
-
-    position: absolute;
-
-    right: 30px;
-    bottom: 15px;
-
-    font-size: 5rem;
-
-    color: rgba(168, 85, 247, 0.08);
-}
-
-.release-label {
-    display: block;
-
-    color: #a855f7;
-
-    font-size: 0.68rem;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 25px;
-}
-
-.latest-release .track-number {
-    color: #777080;
-
-    font-size: 0.72rem;
-
-    letter-spacing: 2px;
-}
-
-.latest-release h3 {
-    margin: 8px 0 5px;
-
-    color: white;
-
-    font-size: 2.2rem;
-
-    letter-spacing: 1px;
-}
-
-.release-artist {
-    color: #c084fc;
-
-    font-size: 0.85rem;
-}
-
-.release-description {
-    max-width: 500px;
-
-    color: #aaa3b8;
-
-    font-size: 0.85rem;
-
-    line-height: 1.7;
-
-    margin: 20px 0 25px;
 }
 
 
-/* =========================
-   DISCOGRAFÍA
-========================= */
+/* =========================================
+   CELULARES MUY PEQUEÑOS
+========================================= */
 
-.discography {
-    max-width: 850px;
+@media (max-width: 390px) {
 
-    margin: 0 auto 55px;
-}
+    .nav-links {
+        gap: 7px;
+    }
 
-.discography-header {
-    display: flex;
+    .nav-links a {
+        font-size: 0.52rem;
+    }
 
-    justify-content: space-between;
-
-    padding-bottom: 12px;
-
-    margin-bottom: 8px;
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-
-    color: #777080;
-
-    font-size: 0.65rem;
-
-    letter-spacing: 2px;
-}
-
-.archive-track {
-    display: grid;
-
-    grid-template-columns: 45px 1fr auto;
-
-    align-items: center;
-
-    gap: 15px;
-
-    padding: 18px 8px;
-
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-
-    transition: 0.3s ease;
-}
-
-.archive-track:hover {
-    padding-left: 15px;
-
-    background: rgba(168,85,247,0.04);
-}
-
-.archive-number {
-    color: #6f6878;
-
-    font-size: 0.7rem;
-
-    letter-spacing: 1px;
-}
-
-.archive-info h3 {
-    margin: 0 0 5px;
-
-    color: #eee;
-
-    font-size: 0.95rem;
-
-    font-weight: 500;
-}
-
-.archive-info p {
-    margin: 0;
-
-    color: #777080;
-
-    font-size: 0.7rem;
-}
-
-.archive-track > a,
-.archive-links a {
-    text-decoration: none;
-
-    color: #aaa3b8;
-
-    font-size: 0.85rem;
-
-    padding: 7px 10px;
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 8px;
-
-    transition: 0.3s ease;
-}
-
-.archive-track > a:hover,
-.archive-links a:hover {
-    color: white;
-
-    border-color: #a855f7;
-
-    background: rgba(168,85,247,0.12);
-}
-
-.archive-links {
-    display: flex;
-
-    gap: 7px;
-}
-
-
-/* =========================
-   CELULAR
-========================= */
-
-@media (max-width: 650px) {
+    .nav-logo {
+        font-size: 0.9rem;
+    }
 
     .latest-release {
-        padding: 25px;
-
-        margin-top: 30px;
-    }
-
-    .latest-release h3 {
-        font-size: 1.7rem;
-    }
-
-    .discography-header {
-        font-size: 0.55rem;
-    }
-
-    .archive-track {
-        grid-template-columns: 30px 1fr auto;
-
-        gap: 10px;
-
-        padding: 16px 3px;
-    }
-
-    .archive-info h3 {
-        font-size: 0.82rem;
-    }
-
-    .archive-info p {
-        font-size: 0.65rem;
-    }
-
-    }
-/* =========================================
-   MUSIC ARCHIVE · $parkø
-========================================= */
-
-.latest-release {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 45px;
-    align-items: center;
-
-    margin: 50px 0 80px;
-    padding: 35px;
-
-    background: linear-gradient(
-        135deg,
-        rgba(168, 85, 247, 0.10),
-        rgba(8, 6, 13, 0.85)
-    );
-
-    border: 1px solid rgba(168, 85, 247, 0.20);
-    border-radius: 24px;
-
-    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
-}
-
-.release-cover {
-    width: 280px;
-    height: 280px;
-
-    object-fit: cover;
-    display: block;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 15px 45px rgba(0, 0, 0, 0.55),
-        0 0 35px rgba(168, 85, 247, 0.12);
-}
-
-.release-info {
-    min-width: 0;
-}
-
-.release-label {
-    display: block;
-
-    margin-bottom: 10px;
-
-    color: #a855f7;
-
-    font-size: 0.65rem;
-    font-weight: 700;
-
-    letter-spacing: 3px;
-}
-
-.track-number {
-    display: block;
-
-    color: #625b6d;
-
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-
-    margin-bottom: 4px;
-}
-
-.release-info h3 {
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: clamp(2rem, 5vw, 4rem);
-    line-height: 1;
-
-    letter-spacing: -2px;
-}
-
-.release-artist {
-    margin: 12px 0;
-
-    color: #a855f7;
-
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-}
-
-.release-description {
-    max-width: 600px;
-
-    margin: 20px 0;
-
-    color: #aaa3b8;
-
-    line-height: 1.7;
-}
-
-.release-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    margin: 20px 0;
-}
-
-.release-meta span {
-    padding: 7px 11px;
-
-    color: #aaa3b8;
-
-    font-size: 0.65rem;
-    letter-spacing: 1px;
-
-    border: 1px solid rgba(168, 85, 247, 0.15);
-    border-radius: 100px;
-
-    background: rgba(255, 255, 255, 0.025);
-}
-
-.music-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    margin-top: 25px;
-}
-
-.music-buttons a,
-.archive-links a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #ddd7e5;
-
-    text-decoration: none;
-
-    border: 1px solid rgba(168, 85, 247, 0.25);
-    background: rgba(168, 85, 247, 0.07);
-
-    transition: 0.3s ease;
-}
-
-.music-buttons a {
-    padding: 11px 17px;
-
-    border-radius: 10px;
-
-    font-size: 0.75rem;
-}
-
-.music-buttons a:hover,
-.archive-links a:hover {
-    color: #ffffff;
-
-    background: rgba(168, 85, 247, 0.18);
-
-    border-color: rgba(192, 132, 252, 0.5);
-
-    transform: translateY(-2px);
-}
-
-
-/* =========================================
-   ARCHIVE
-========================================= */
-
-.discography {
-    margin-top: 40px;
-}
-
-.discography-header {
-    display: flex;
-    justify-content: space-between;
-
-    padding-bottom: 15px;
-    margin-bottom: 5px;
-
-    color: #625b6d;
-
-    font-size: 0.65rem;
-    letter-spacing: 2px;
-
-    border-bottom: 1px solid rgba(168, 85, 247, 0.12);
-}
-
-.archive-track {
-    display: grid;
-
-    grid-template-columns: 72px 35px minmax(150px, 1fr) minmax(220px, 1.4fr) 50px;
-
-    gap: 20px;
-
-    align-items: center;
-
-    padding: 22px 0;
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-
-    transition: 0.3s ease;
-}
-
-.archive-track:hover {
-    padding-left: 10px;
-    padding-right: 10px;
-
-    background: rgba(168, 85, 247, 0.035);
-
-    border-radius: 14px;
-}
-
-.archive-cover {
-    width: 72px;
-    height: 72px;
-
-    object-fit: cover;
-
-    display: block;
-
-    border-radius: 10px;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-
-    transition: 0.3s ease;
-}
-
-.archive-track:hover .archive-cover {
-    transform: scale(1.04);
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.5),
-        0 0 20px rgba(168, 85, 247, 0.12);
-}
-
-.archive-number {
-    color: #514b59;
-
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-}
-
-.archive-info {
-    min-width: 0;
-}
-
-.archive-info h3 {
-    margin: 0 0 6px;
-
-    color: #eeeaf2;
-
-    font-size: 0.95rem;
-
-    font-weight: 600;
-
-    overflow-wrap: anywhere;
-}
-
-.archive-info p {
-    margin: 0;
-
-    color: #716a79;
-
-    font-size: 0.65rem;
-
-    letter-spacing: 0.5px;
-}
-
-.archive-details {
-    min-width: 0;
-}
-
-.archive-details > span:not(.credits) {
-    display: inline-block;
-
-    margin-right: 10px;
-
-    color: #716a79;
-
-    font-size: 0.62rem;
-
-    letter-spacing: 1px;
-}
-
-.archive-details p {
-    margin: 8px 0;
-
-    color: #8e8796;
-
-    font-size: 0.7rem;
-
-    line-height: 1.5;
-}
-
-.archive-details .credits {
-    display: block;
-
-    color: #514b59;
-
-    font-size: 0.55rem;
-
-    line-height: 1.5;
-
-    letter-spacing: 0.3px;
-}
-
-.archive-links {
-    display: flex;
-    justify-content: flex-end;
-
-    gap: 6px;
-}
-
-.archive-links a {
-    width: 34px;
-    height: 34px;
-
-    border-radius: 50%;
-
-    font-size: 0.8rem;
-}
-
-
-/* =========================================
-   DIVISORES
-========================================= */
-
-.archive-divider {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-
-    margin: 55px 0 5px;
-
-    color: #a855f7;
-
-    font-size: 0.65rem;
-    letter-spacing: 3px;
-}
-
-.archive-divider::after {
-    content: "";
-
-    flex: 1;
-
-    height: 1px;
-
-    background: linear-gradient(
-        90deg,
-        rgba(168, 85, 247, 0.3),
-        transparent
-    );
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 750px) {
-
-    .latest-release {
-        grid-template-columns: 1fr;
-
-        gap: 25px;
-
-        padding: 22px;
-
-        margin-top: 35px;
+        padding: 17px;
     }
 
     .release-cover {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-        aspect-ratio: 1 / 1;
-
-        margin: 0 auto;
+        width: min(100%, 250px);
     }
 
     .release-info h3 {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     .archive-track {
-        grid-template-columns: 62px 1fr 40px;
+        grid-template-columns: 55px 1fr 34px;
 
-        gap: 13px;
-
-        padding: 18px 0;
+        gap: 9px;
     }
 
     .archive-cover {
-        width: 62px;
-        height: 62px;
-    }
+        width: 55px;
+        height: 55px;
 
-    .archive-number {
-        display: none;
-    }
-
-    .archive-details {
-        grid-column: 2 / 4;
-    }
-
-    .archive-links {
-        grid-column: 3;
-        grid-row: 1;
-
-        justify-content: flex-end;
-    }
-
-    .archive-info h3 {
-        font-size: 0.85rem;
-    }
-
-    .archive-details p {
-        font-size: 0.65rem;
-    }
-
-    .archive-details .credits {
-        font-size: 0.5rem;
-    }
-
-    .discography-header {
-        font-size: 0.55rem;
+        min-width: 55px;
     }
 }
