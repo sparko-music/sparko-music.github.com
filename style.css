@@ -889,3 +889,430 @@ footer p {
     }
 
     }
+/* =========================================
+   MUSIC ARCHIVE · $parkø
+========================================= */
+
+.latest-release {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 45px;
+    align-items: center;
+
+    margin: 50px 0 80px;
+    padding: 35px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(168, 85, 247, 0.10),
+        rgba(8, 6, 13, 0.85)
+    );
+
+    border: 1px solid rgba(168, 85, 247, 0.20);
+    border-radius: 24px;
+
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+}
+
+.release-cover {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+    display: block;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.55),
+        0 0 35px rgba(168, 85, 247, 0.12);
+}
+
+.release-info {
+    min-width: 0;
+}
+
+.release-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #a855f7;
+
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.track-number {
+    display: block;
+
+    color: #625b6d;
+
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+
+    margin-bottom: 4px;
+}
+
+.release-info h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.release-artist {
+    margin: 12px 0;
+
+    color: #a855f7;
+
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.release-description {
+    max-width: 600px;
+
+    margin: 20px 0;
+
+    color: #aaa3b8;
+
+    line-height: 1.7;
+}
+
+.release-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+.release-meta span {
+    padding: 7px 11px;
+
+    color: #aaa3b8;
+
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+
+    border: 1px solid rgba(168, 85, 247, 0.15);
+    border-radius: 100px;
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.music-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.music-buttons a,
+.archive-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ddd7e5;
+
+    text-decoration: none;
+
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    background: rgba(168, 85, 247, 0.07);
+
+    transition: 0.3s ease;
+}
+
+.music-buttons a {
+    padding: 11px 17px;
+
+    border-radius: 10px;
+
+    font-size: 0.75rem;
+}
+
+.music-buttons a:hover,
+.archive-links a:hover {
+    color: #ffffff;
+
+    background: rgba(168, 85, 247, 0.18);
+
+    border-color: rgba(192, 132, 252, 0.5);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ARCHIVE
+========================================= */
+
+.discography {
+    margin-top: 40px;
+}
+
+.discography-header {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+
+    color: #625b6d;
+
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+
+    border-bottom: 1px solid rgba(168, 85, 247, 0.12);
+}
+
+.archive-track {
+    display: grid;
+
+    grid-template-columns: 72px 35px minmax(150px, 1fr) minmax(220px, 1.4fr) 50px;
+
+    gap: 20px;
+
+    align-items: center;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    transition: 0.3s ease;
+}
+
+.archive-track:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background: rgba(168, 85, 247, 0.035);
+
+    border-radius: 14px;
+}
+
+.archive-cover {
+    width: 72px;
+    height: 72px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+
+    transition: 0.3s ease;
+}
+
+.archive-track:hover .archive-cover {
+    transform: scale(1.04);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(168, 85, 247, 0.12);
+}
+
+.archive-number {
+    color: #514b59;
+
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.archive-info {
+    min-width: 0;
+}
+
+.archive-info h3 {
+    margin: 0 0 6px;
+
+    color: #eeeaf2;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    overflow-wrap: anywhere;
+}
+
+.archive-info p {
+    margin: 0;
+
+    color: #716a79;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.5px;
+}
+
+.archive-details {
+    min-width: 0;
+}
+
+.archive-details > span:not(.credits) {
+    display: inline-block;
+
+    margin-right: 10px;
+
+    color: #716a79;
+
+    font-size: 0.62rem;
+
+    letter-spacing: 1px;
+}
+
+.archive-details p {
+    margin: 8px 0;
+
+    color: #8e8796;
+
+    font-size: 0.7rem;
+
+    line-height: 1.5;
+}
+
+.archive-details .credits {
+    display: block;
+
+    color: #514b59;
+
+    font-size: 0.55rem;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.3px;
+}
+
+.archive-links {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 6px;
+}
+
+.archive-links a {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================================
+   DIVISORES
+========================================= */
+
+.archive-divider {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin: 55px 0 5px;
+
+    color: #a855f7;
+
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+}
+
+.archive-divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(168, 85, 247, 0.3),
+        transparent
+    );
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .latest-release {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 22px;
+
+        margin-top: 35px;
+    }
+
+    .release-cover {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+
+        margin: 0 auto;
+    }
+
+    .release-info h3 {
+        font-size: 2.5rem;
+    }
+
+    .archive-track {
+        grid-template-columns: 62px 1fr 40px;
+
+        gap: 13px;
+
+        padding: 18px 0;
+    }
+
+    .archive-cover {
+        width: 62px;
+        height: 62px;
+    }
+
+    .archive-number {
+        display: none;
+    }
+
+    .archive-details {
+        grid-column: 2 / 4;
+    }
+
+    .archive-links {
+        grid-column: 3;
+        grid-row: 1;
+
+        justify-content: flex-end;
+    }
+
+    .archive-info h3 {
+        font-size: 0.85rem;
+    }
+
+    .archive-details p {
+        font-size: 0.65rem;
+    }
+
+    .archive-details .credits {
+        font-size: 0.5rem;
+    }
+
+    .discography-header {
+        font-size: 0.55rem;
+    }
+}
