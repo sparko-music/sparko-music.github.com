@@ -1318,3 +1318,211 @@ footer p {
         min-width: 55px;
     }
 }
+/* =========================================
+   ARCHIVO DESPLEGABLE
+========================================= */
+
+.archive-item {
+    border-bottom: 1px solid rgba(156, 108, 255, 0.12);
+}
+
+.archive-item > summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.archive-item > summary::-webkit-details-marker {
+    display: none;
+}
+
+.archive-track {
+    display: grid !important;
+    grid-template-columns: 72px 34px minmax(0, 1fr) 40px !important;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 0;
+    transition: 0.3s ease;
+}
+
+.archive-track:hover {
+    background: rgba(156, 108, 255, 0.04);
+}
+
+.archive-item[open] .archive-track {
+    background: rgba(156, 108, 255, 0.07);
+}
+
+.archive-info {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.archive-title {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.archive-subtitle {
+    color: #8f879d;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.archive-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(168, 85, 247, 0.35);
+    border-radius: 50%;
+    color: #c084fc;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.archive-item[open] .archive-toggle {
+    transform: rotate(45deg);
+    background: rgba(168, 85, 247, 0.12);
+}
+
+.archive-expanded {
+    padding: 0 0 24px 124px;
+    animation: archiveOpen 0.3s ease;
+}
+
+@keyframes archiveOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.expanded-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.expanded-meta span {
+    padding: 5px 9px;
+    border: 1px solid rgba(156, 108, 255, 0.18);
+    border-radius: 999px;
+    color: #aaa3b8;
+    font-size: 0.65rem;
+    letter-spacing: 0.8px;
+}
+
+.expanded-description {
+    max-width: 650px;
+    margin: 0 0 15px;
+    color: #b8b1c2;
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+.credits {
+    display: block;
+    margin-bottom: 17px;
+    color: #756d80;
+    font-size: 0.65rem;
+    line-height: 1.6;
+}
+
+.archive-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.archive-platforms a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 13px;
+    border: 1px solid rgba(168, 85, 247, 0.28);
+    border-radius: 8px;
+    color: #c084fc;
+    font-size: 0.7rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.archive-platforms a:hover {
+    background: rgba(168, 85, 247, 0.12);
+    border-color: rgba(168, 85, 247, 0.55);
+    color: #ffffff;
+}
+
+
+/* =========================================
+   ARCHIVO EN CELULAR
+========================================= */
+
+@media (max-width: 650px) {
+
+    .archive-track {
+        grid-template-columns: 58px minmax(0, 1fr) 36px !important;
+        gap: 13px;
+        padding: 14px 0;
+    }
+
+    .archive-number {
+        display: none;
+    }
+
+    .archive-cover {
+        width: 58px;
+        height: 58px;
+    }
+
+    .archive-title {
+        font-size: 0.82rem;
+    }
+
+    .archive-subtitle {
+        font-size: 0.6rem;
+    }
+
+    .archive-toggle {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .archive-expanded {
+        padding: 0 0 20px 71px;
+    }
+
+    .expanded-meta {
+        gap: 6px;
+    }
+
+    .expanded-meta span {
+        font-size: 0.58rem;
+    }
+
+    .expanded-description {
+        font-size: 0.75rem;
+    }
+
+    .credits {
+        font-size: 0.58rem;
+    }
+
+    .archive-platforms a {
+        font-size: 0.62rem;
+        padding: 7px 10px;
+    }
+}
