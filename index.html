@@ -210,7 +210,7 @@
         </article>
 
 
-        <!-- 333 -->
+        <!-- 333💗 -->
 
         <article class="music-card">
 
@@ -218,7 +218,7 @@
 
             <img
               src="assets/covers/cover-09.jpg"
-              alt="Portada de 333 corazón"
+              alt="Portada de 333💗"
             >
 
           </div>
@@ -456,10 +456,11 @@
             <div class="music-links">
 
               <a
-                href="#"
-                class="disabled-link"
+                href="https://on.soundcloud.com/uQhUYGPDIoR0IWFv3B"
+                target="_blank"
+                rel="noopener"
               >
-                archivo ↗
+                soundcloud ↗
               </a>
 
             </div>
@@ -469,7 +470,7 @@
         </article>
 
 
-        <!-- SOLO -->
+        <!-- broken heart solo -->
 
         <article class="music-card">
 
@@ -552,7 +553,7 @@
         </article>
 
 
-        <!-- POSITIONEXXX -->
+        <!-- posicionexxx -->
 
         <article class="music-card">
 
@@ -604,7 +605,7 @@
         </article>
 
 
-        <!-- CIELO -->
+        <!-- cielo -->
 
         <article class="music-card">
 
@@ -652,7 +653,7 @@
         </article>
 
 
-        <!-- NUCITA -->
+        <!-- nucita -->
 
         <article class="music-card">
 
@@ -692,7 +693,7 @@
         </article>
 
 
-        <!-- DEDICATED -->
+        <!-- dedicated -->
 
         <article class="music-card">
 
@@ -730,7 +731,6 @@
           </div>
 
         </article>
-
 
       </div>
 
@@ -806,6 +806,8 @@
       <div class="thoughts-list">
 
 
+        <!-- ENTRADA 01 -->
+
         <article class="thought">
 
           <div class="thought-date">
@@ -851,6 +853,8 @@
         </article>
 
 
+        <!-- ENTRADA 02 -->
+
         <article class="thought">
 
           <div class="thought-date">
@@ -892,6 +896,8 @@
         </article>
 
 
+        <!-- ENTRADA 03 -->
+
         <article class="thought">
 
           <div class="thought-date">
@@ -932,7 +938,6 @@
 
         </article>
 
-
       </div>
 
     </section>
@@ -965,36 +970,54 @@
       <div class="life-grid">
 
         <div class="life-card">
-          <span>01</span>
+
+          <span>
+            01
+          </span>
+
           <h3>
             días raros
           </h3>
+
           <p>
             momentos que no sé dónde guardar,
             así que terminan aquí.
           </p>
+
         </div>
 
         <div class="life-card">
-          <span>02</span>
+
+          <span>
+            02
+          </span>
+
           <h3>
             recuerdos
           </h3>
+
           <p>
             pequeñas cosas que probablemente
             terminarán convirtiéndose en canciones.
           </p>
+
         </div>
 
         <div class="life-card">
-          <span>03</span>
+
+          <span>
+            03
+          </span>
+
           <h3>
             camino
           </h3>
+
           <p>
             todavía no sé exactamente hacia dónde,
             pero sigo caminando.
           </p>
+
         </div>
 
       </div>
@@ -1117,9 +1140,13 @@
   </footer>
 
 
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
   <script>
 
-    /* Smooth reveal on scroll */
+    /* Reveal animations */
 
     const elements = document.querySelectorAll(
       '.section-heading, .music-card, .thought, .life-card, .text-card, .random-box'
@@ -1149,24 +1176,30 @@
     });
 
 
-    /* Navbar background */
+    /* Navbar on scroll */
 
     const navbar = document.querySelector('.navbar');
 
     window.addEventListener('scroll', () => {
 
       if (window.scrollY > 40) {
+
         navbar.classList.add('scrolled');
+
       } else {
+
         navbar.classList.remove('scrolled');
+
       }
 
     });
 
 
-    /* Close other thought entries */
+    /* Only one thought open at a time */
 
-    const details = document.querySelectorAll('.thought details');
+    const details = document.querySelectorAll(
+      '.thought details'
+    );
 
     details.forEach(detail => {
 
@@ -1177,7 +1210,9 @@
           details.forEach(other => {
 
             if (other !== detail) {
+
               other.removeAttribute('open');
+
             }
 
           });
@@ -1191,977 +1226,4 @@
   </script>
 
 </body>
-    </html>:06</span>
-                            <span>RAP</span>
-
-                        </div>
-
-                        <p class="expanded-description">
-                            vøce$ es una canción que habla cosas medio
-                            personales, abordandolas con el personaje
-                            de $parkø
-                        </p>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/Zb7MhVsz8VWrVccPzC"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <!-- V4L3NT1NA -->
-
-                <details class="archive-item">
-
-                    <summary class="archive-track">
-
-                        <img
-                            src="assets/covers/cover-04.jpg"
-                            alt="Portada de V4L3NT1NA"
-                            class="archive-cover">
-
-                        <span class="archive-number">
-                            04
-                        </span>
-
-                        <span class="archive-info">
-
-                            <span class="archive-title">
-                                V4L3NT1NA
-                            </span>
-
-                            <span class="archive-subtitle">
-                                $parkø · TRAP
-                            </span>
-
-                        </span>
-
-                        <span class="archive-toggle">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="archive-expanded">
-
-                        <div class="expanded-meta">
-
-                            <span>12/11/2025</span>
-                            <span>02:20</span>
-                            <span>TRAP</span>
-
-                        </div>
-
-                        <p class="expanded-description">
-                            no se que decir, la canción no tiene nada q
-                            ver pero es el nombre q le pondré a mi futura
-                            hija, si llego a mayor xd
-                        </p>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/9iZw66u1MbWTQA6ZVC"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <!-- saturno -->
-
-                <details class="archive-item">
-
-                    <summary class="archive-track">
-
-                        <img
-                            src="assets/covers/cover-03.webp"
-                            alt="Portada de saturno"
-                            class="archive-cover">
-
-                        <span class="archive-number">
-                            05
-                        </span>
-
-                        <span class="archive-info">
-
-                            <span class="archive-title">
-                                saturno $parkø ft darcofx$
-                            </span>
-
-                            <span class="archive-subtitle">
-                                $parkø · ft. darcofx$ · TRAP
-                            </span>
-
-                        </span>
-
-                        <span class="archive-toggle">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="archive-expanded">
-
-                        <div class="expanded-meta">
-
-                            <span>20/08/2025</span>
-                            <span>02:57</span>
-                            <span>TRAP</span>
-
-                        </div>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/bGSTIyZGIjMDBisPoX"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                            <a
-                                href="https://youtu.be/pxv3ITpl8Ao?si=vNNilDSX1Gxpvj2L"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ▶ YouTube
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <!-- ★ -->
-
-                <details class="archive-item">
-
-                    <summary class="archive-track">
-
-                        <img
-                            src="assets/covers/cover-02.jpg"
-                            alt="Portada de ★"
-                            class="archive-cover">
-
-                        <span class="archive-number">
-                            06
-                        </span>
-
-                        <span class="archive-info">
-
-                            <span class="archive-title">
-                                ★?±¿✡
-                            </span>
-
-                            <span class="archive-subtitle">
-                                $parkø · TRAP
-                            </span>
-
-                        </span>
-
-                        <span class="archive-toggle">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="archive-expanded">
-
-                        <div class="expanded-meta">
-
-                            <span>15/06/2025</span>
-                            <span>02:29</span>
-                            <span>TRAP</span>
-
-                        </div>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/dO6muYwL5DWSt9LiMT"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <!-- =========================
-                     EP 01
-                ========================== -->
-
-                <div class="archive-divider">
-
-                    <span>
-                        03
-                    </span>
-
-                    <strong>
-                        EP 01
-                    </strong>
-
-                </div>
-
-
-                <!-- posicionexxx -->
-
-                <details class="archive-item">
-
-                    <summary class="archive-track">
-
-                        <img
-                            src="assets/covers/cover-01.webp"
-                            alt="Portada de posicionexxx"
-                            class="archive-cover">
-
-                        <span class="archive-number">
-                            01
-                        </span>
-
-                        <span class="archive-info">
-
-                            <span class="archive-title">
-                                posicionexxx
-                            </span>
-
-                            <span class="archive-subtitle">
-                                $parkø · ft. darcofx$ · TRAP
-                            </span>
-
-                        </span>
-
-                        <span class="archive-toggle">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="archive-expanded">
-
-                        <div class="expanded-meta">
-
-                            <span>09/05/2025</span>
-                            <span>03:44</span>
-                            <span>TRAP</span>
-
-                        </div>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/w8E84XMBZjfyiRyvyC"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                            <a
-                                href="https://youtu.be/1mI65Zmq7q4?si=52pvKAa9zKVv830a"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ▶ YouTube
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <!-- cielo en 33 -->
-
-                <details class="archive-item">
-
-                    <summary class="archive-track">
-
-                        <img
-                            src="assets/covers/cover-01.webp"
-                            alt="Portada de cielo en 33"
-                            class="archive-cover">
-
-                        <span class="archive-number">
-                            02
-                        </span>
-
-                        <span class="archive-info">
-
-                            <span class="archive-title">
-                                cielo en 33
-                            </span>
-
-                            <span class="archive-subtitle">
-                                $parkø · PLUGG
-                            </span>
-
-                        </span>
-
-                        <span class="archive-toggle">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="archive-expanded">
-
-                        <div class="expanded-meta">
-
-                            <span>19/05/2025</span>
-                            <span>02:48</span>
-                            <span>PLUGG</span>
-
-                        </div>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/Ox1645Hqal8mAl3nSp"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                            <a
-                                href="https://youtu.be/bwIjYdg510E?si=NcNoH1zTaLmmAYYG"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ▶ YouTube
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <!-- dedicated -->
-
-                <details class="archive-item">
-
-                    <summary class="archive-track">
-
-                        <img
-                            src="assets/covers/cover-01.webp"
-                            alt="Portada de dedicated to you"
-                            class="archive-cover">
-
-                        <span class="archive-number">
-                            03
-                        </span>
-
-                        <span class="archive-info">
-
-                            <span class="archive-title">
-                                dedicated to you &lt;3
-                            </span>
-
-                            <span class="archive-subtitle">
-                                $parkø · JAZZ / RAP
-                            </span>
-
-                        </span>
-
-                        <span class="archive-toggle">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="archive-expanded">
-
-                        <div class="expanded-meta">
-
-                            <span>19/06/2025</span>
-                            <span>02:02</span>
-                            <span>JAZZ / RAP</span>
-
-                        </div>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/JH2YQddY7kQSbHrgwd"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <!-- nucita -->
-
-                <details class="archive-item">
-
-                    <summary class="archive-track">
-
-                        <img
-                            src="assets/covers/cover-01.webp"
-                            alt="Portada de nucita"
-                            class="archive-cover">
-
-                        <span class="archive-number">
-                            04
-                        </span>
-
-                        <span class="archive-info">
-
-                            <span class="archive-title">
-                                nucita🍬
-                            </span>
-
-                            <span class="archive-subtitle">
-                                $parkø · RAP
-                            </span>
-
-                        </span>
-
-                        <span class="archive-toggle">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="archive-expanded">
-
-                        <div class="expanded-meta">
-
-                            <span>01/10/2025</span>
-                            <span>02:39</span>
-                            <span>RAP</span>
-
-                        </div>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/pxmNC2FBwpw23r0gpw"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <!-- =========================
-                     EP 02
-                ========================== -->
-
-                <div class="archive-divider">
-
-                    <span>
-                        04
-                    </span>
-
-                    <strong>
-                        EP 02
-                    </strong>
-
-                </div>
-
-
-                <!-- broken heart -->
-
-                <details class="archive-item">
-
-                    <summary class="archive-track">
-
-                        <img
-                            src="assets/covers/cover-06.jpeg"
-                            alt="Portada de broken heart"
-                            class="archive-cover">
-
-                        <span class="archive-number">
-                            01
-                        </span>
-
-                        <span class="archive-info">
-
-                            <span class="archive-title">
-                                broken heart
-                            </span>
-
-                            <span class="archive-subtitle">
-                                $parkø · TRAP
-                            </span>
-
-                        </span>
-
-                        <span class="archive-toggle">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="archive-expanded">
-
-                        <div class="expanded-meta">
-
-                            <span>04/02/2026</span>
-                            <span>03:13</span>
-                            <span>TRAP</span>
-
-                        </div>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/qW6YrO9JZLyhezW2lK"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <!-- Ø9/I1 -->
-
-                <details class="archive-item">
-
-                    <summary class="archive-track">
-
-                        <img
-                            src="assets/covers/cover-06.jpeg"
-                            alt="Portada de Ø9/I1"
-                            class="archive-cover">
-
-                        <span class="archive-number">
-                            02
-                        </span>
-
-                        <span class="archive-info">
-
-                            <span class="archive-title">
-                                Ø9/I1
-                            </span>
-
-                            <span class="archive-subtitle">
-                                $parkø · TRAP
-                            </span>
-
-                        </span>
-
-                        <span class="archive-toggle">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="archive-expanded">
-
-                        <div class="expanded-meta">
-
-                            <span>22/02/2026</span>
-                            <span>02:41</span>
-                            <span>TRAP</span>
-
-                        </div>
-
-                        <p class="expanded-description">
-                            Ø9/I1 es una canción con dedicatoria hacia
-                            alguien muy especial
-                        </p>
-
-                        <span class="credits">
-                            Escrito · producido · grabado · mezclado ·
-                            masterizado por $parkø
-                        </span>
-
-                        <div class="archive-platforms">
-
-                            <a
-                                href="https://on.soundcloud.com/liVVf7dgpIBrNQ3vGS"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                ☁ SoundCloud
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-            </div>
-
-
-            <!-- REDES -->
-
-            <div class="social-links">
-
-                <a
-                    href="https://on.soundcloud.com/6uKNnMMhVgDoQf3h8G"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    SoundCloud
-
-                </a>
-
-                <a
-                    href="https://youtube.com/@sparkovz?si=pl_8rs7adqpSXWN3"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    YouTube
-
-                </a>
-
-                <a
-                    href="https://www.tiktok.com/@v_zel1?_r=1&_t=ZT-99oVkgBrSBh"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    TikTok
-
-                </a>
-
-                <a
-                    href="https://www.instagram.com/v_zel1?stkn=MXh5ZW1sZWM0MnZtbg=="
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    Instagram
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ARTE
-        ========================== -->
-
-        <section id="arte" class="section simple-section">
-
-            <div class="section-heading">
-
-                <span class="section-number">
-                    02
-                </span>
-
-                <div>
-                    <span class="section-label">
-                        visual
-                    </span>
-
-                    <h2>
-                        arte
-                    </h2>
-                </div>
-
-            </div>
-
-            <div class="simple-content">
-
-                <p>
-                    portadas, ideas, diseños, imágenes,
-                    conceptos y todo lo que salga de mi cabeza.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PENSAMIENTOS
-        ========================== -->
-
-        <section id="pensamientos" class="section thoughts-section">
-
-            <div class="section-heading">
-
-                <span class="section-number">
-                    03
-                </span>
-
-                <div>
-                    <span class="section-label">
-                        mente
-                    </span>
-
-                    <h2>
-                        pensamientos
-                    </h2>
-                </div>
-
-            </div>
-
-
-            <div class="thoughts-grid">
-
-                <details class="thought-card">
-
-                    <summary>
-                        ¿por qué hago música?
-                        <span>+</span>
-                    </summary>
-
-                    <p>
-                        Porque hay cosas que a veces no sé explicar
-                        hablando. Entonces intento convertirlas
-                        en sonido.
-                    </p>
-
-                </details>
-
-
-                <details class="thought-card">
-
-                    <summary>
-                        crear sin saber qué estoy haciendo
-                        <span>+</span>
-                    </summary>
-
-                    <p>
-                        Muchas ideas empiezan sin un plan.
-                        Algunas terminan siendo canciones,
-                        otras simplemente se quedan como ideas.
-                    </p>
-
-                </details>
-
-
-                <details class="thought-card">
-
-                    <summary>
-                        seguir creando
-                        <span>+</span>
-                    </summary>
-
-                    <p>
-                        No todo tiene que salir perfecto.
-                        A veces simplemente hay que terminar
-                        algo para poder empezar lo siguiente.
-                    </p>
-
-                </details>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             VIDA
-        ========================== -->
-
-        <section id="vida" class="section simple-section">
-
-            <div class="section-heading">
-
-                <span class="section-number">
-                    04
-                </span>
-
-                <div>
-                    <span class="section-label">
-                        fuera del estudio
-                    </span>
-
-                    <h2>
-                        vida
-                    </h2>
-                </div>
-
-            </div>
-
-            <div class="simple-content">
-
-                <p>
-                    momentos, recuerdos, experiencias,
-                    cosas que me gustan y cosas que simplemente
-                    forman parte de mi vida.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             RANDOM
-        ========================== -->
-
-        <section id="random" class="section random-section">
-
-            <div class="section-heading">
-
-                <span class="section-number">
-                    05
-                </span>
-
-                <div>
-                    <span class="section-label">
-                        cualquier cosa
-                    </span>
-
-                    <h2>
-                        random
-                    </h2>
-                </div>
-
-            </div>
-
-            <div class="random-box">
-
-                <span>
-                    404
-                </span>
-
-                <p>
-                    probablemente aquí termine
-                    cualquier cosa que no tenga categoría.
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <div class="footer-logo">
-            $parkø
-        </div>
-
-        <p>
-            hecho desde la nada, con música de fondo.
-        </p>
-
-        <span>
-            © 2026 $parkø
-        </span>
-
-    </footer>
-
-
-</body>
-
 </html>
