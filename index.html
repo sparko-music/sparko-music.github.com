@@ -2,20 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <title>$parkø · lunar love</title>
 
   <meta
     name="description"
     content="$parkø. Música, arte, pensamientos, vida y cualquier cosa que exista en este universo."
   >
 
-  <title>$parkø · lunar love</title>
-
-  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -24,41 +19,28 @@
     rel="stylesheet"
   >
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- =========================
-       BACKGROUND
-  ========================== -->
+  <!-- =====================================================
+       NOISE / ATMÓSFERA
+       ===================================================== -->
 
   <div class="noise"></div>
 
-  <div class="stars">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-
-  <!-- =========================
+  <!-- =====================================================
        NAVBAR
-  ========================== -->
+       ===================================================== -->
 
-  <header class="navbar">
+  <header class="navbar" id="navbar">
 
-    <a href="#inicio" class="logo">$parkø</a>
+    <a href="#inicio" class="logo">
+      $parkø<span>✦</span>
+    </a>
 
-    <nav>
+    <nav class="nav-links">
       <a href="#musica">música</a>
       <a href="#arte">arte</a>
       <a href="#pensamientos">pensamientos</a>
@@ -69,80 +51,71 @@
   </header>
 
 
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+
   <main>
 
-    <!-- =========================
-         HERO
-    ========================== -->
+    <section class="hero" id="inicio">
 
-    <section id="inicio" class="hero">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
 
-      <div class="hero-glow"></div>
+      <div class="stars"></div>
 
-      <div class="moon">
-        ☾
+      <div class="hero-content reveal">
+
+        <p class="eyebrow">
+          2009 · 333 · guatemala
+        </p>
+
+        <h1>
+          $parkø
+        </h1>
+
+        <p class="hero-symbol">
+          ☾
+        </p>
+
+        <p class="hero-description">
+          música, pensamientos, arte<br>
+          y cualquier cosa que pase por mi cabeza.
+        </p>
+
+        <a href="#musica" class="hero-button">
+          entrar al universo →
+        </a>
+
       </div>
-
-      <p class="eyebrow">
-        somewhere between reality & imagination
-      </p>
-
-      <h1>
-        $parkø
-      </h1>
-
-      <p class="hero-subtitle">
-        música · arte · pensamientos · vida
-      </p>
-
-      <p class="hero-description">
-        un pequeño universo hecho de canciones,
-        ideas, recuerdos y cosas que probablemente
-        no deberían tener sentido.
-      </p>
-
-      <a href="#musica" class="hero-button">
-        entrar al universo →
-      </a>
 
       <div class="scroll-indicator">
         <span></span>
+        scroll
       </div>
 
     </section>
 
 
-    <!-- =========================
+    <!-- =====================================================
          MÚSICA
-    ========================== -->
+         ===================================================== -->
 
-    <section id="musica" class="section music-section">
+    <section class="section" id="musica">
 
-      <div class="section-heading">
-
-        <span class="section-number">
-          01
-        </span>
+      <div class="section-heading reveal">
 
         <div>
-          <p class="mini-label">
-            sounds from another dimension
-          </p>
+          <p class="section-number">01 / música</p>
 
           <h2>
-            música
+            lo que suena
           </h2>
         </div>
 
-      </div>
-
-
-      <div class="music-intro">
-
-        <p>
-          canciones hechas desde mi habitación,
-          mis pensamientos y todo aquello que
-          alguna vez necesitó convertirse en sonido.
+        <p class="section-intro">
+          canciones, experimentos y cosas que salieron
+          de algún rincón de mi cabeza.
         </p>
 
       </div>
@@ -151,56 +124,47 @@
       <div class="music-grid">
 
 
-        <!-- NOCTURNØS -->
+        <!-- =================================================
+             01 · ★?±¿✡
+             COVER 01
+             ================================================= -->
 
-        <article class="music-card featured">
+        <article class="music-card reveal">
 
-          <div class="cover-wrapper">
-
+          <div class="music-image">
             <img
-              src="assets/covers/cover-07.png"
-              alt="Portada de NOCTURNØS"
+              src="assets/covers/cover-01.webp"
+              alt="Portada de ★?±¿✡"
+              loading="lazy"
             >
 
-            <div class="cover-overlay">
-              <span>
-                latest release
-              </span>
+            <div class="music-number">
+              01
             </div>
-
           </div>
 
           <div class="music-info">
 
-            <span class="music-type">
-              SINGLE · 23.08.2026
-            </span>
+            <p class="music-type">
+              SINGLE
+            </p>
 
             <h3>
-              NOCTURNØS
+              ★?±¿✡
             </h3>
 
-            <p>
-              una canción para las noches
-              que se sienten demasiado largas.
+            <p class="music-artist">
+              $parkø
             </p>
 
             <div class="music-links">
 
               <a
-                href="https://on.soundcloud.com/bcB9eDAL0E63TdFtyq"
+                href="https://on.soundcloud.com/dO6muYwL5DWSt9LiMT"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                soundcloud ↗
-              </a>
-
-              <a
-                href="https://youtu.be/J6kNi7nx5HY?si=N-_pW9eIA7Z4wFdN"
-                target="_blank"
-                rel="noopener"
-              >
-                youtube ↗
+                SoundCloud ↗
               </a>
 
             </div>
@@ -210,31 +174,37 @@
         </article>
 
 
-        <!-- 333💗 -->
+        <!-- =================================================
+             02 · 333💗
+             COVER 02
+             ================================================= -->
 
-        <article class="music-card">
+        <article class="music-card reveal">
 
-          <div class="cover-wrapper">
-
+          <div class="music-image">
             <img
-              src="assets/covers/cover-09.jpg"
+              src="assets/covers/cover-02.jpg"
               alt="Portada de 333💗"
+              loading="lazy"
             >
 
+            <div class="music-number">
+              02
+            </div>
           </div>
 
           <div class="music-info">
 
-            <span class="music-type">
+            <p class="music-type">
               EP 02
-            </span>
+            </p>
 
             <h3>
               333💗
             </h3>
 
-            <p>
-              una pieza de otra parte de la historia.
+            <p class="music-artist">
+              $parkø
             </p>
 
             <div class="music-links">
@@ -242,9 +212,9 @@
               <a
                 href="https://on.soundcloud.com/IAtjPyojiQaMia3cz2"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                soundcloud ↗
+                SoundCloud ↗
               </a>
 
             </div>
@@ -254,70 +224,36 @@
         </article>
 
 
-        <!-- vøce$ -->
+        <!-- =================================================
+             03 · SATURNO
+             COVER 03
+             ================================================= -->
 
-        <article class="music-card">
+        <article class="music-card reveal">
 
-          <div class="cover-wrapper">
-
-            <img
-              src="assets/covers/cover-08.png"
-              alt="Portada de vøce$"
-            >
-
-          </div>
-
-          <div class="music-info">
-
-            <span class="music-type">
-              SINGLE
-            </span>
-
-            <h3>
-              vøce$
-            </h3>
-
-            <div class="music-links">
-
-              <a
-                href="https://on.soundcloud.com/Zb7MhVsz8VWrVccPzC"
-                target="_blank"
-                rel="noopener"
-              >
-                soundcloud ↗
-              </a>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-        <!-- SATURNO -->
-
-        <article class="music-card">
-
-          <div class="cover-wrapper">
-
+          <div class="music-image">
             <img
               src="assets/covers/cover-03.webp"
               alt="Portada de saturno"
+              loading="lazy"
             >
 
+            <div class="music-number">
+              03
+            </div>
           </div>
 
           <div class="music-info">
 
-            <span class="music-type">
+            <p class="music-type">
               COLLAB
-            </span>
+            </p>
 
             <h3>
               saturno
             </h3>
 
-            <p>
+            <p class="music-artist">
               $parkø ft. darcofx$
             </p>
 
@@ -326,17 +262,17 @@
               <a
                 href="https://on.soundcloud.com/bGSTIyZGIjMDBisPoX"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                soundcloud ↗
+                SoundCloud ↗
               </a>
 
               <a
                 href="https://youtu.be/pxv3ITpl8Ao?si=vNNilDSX1Gxpvj2L"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                youtube ↗
+                YouTube ↗
               </a>
 
             </div>
@@ -346,37 +282,47 @@
         </article>
 
 
-        <!-- V4L3NT1NA -->
+        <!-- =================================================
+             04 · V4L3NT1NA
+             COVER 04
+             ================================================= -->
 
-        <article class="music-card">
+        <article class="music-card reveal">
 
-          <div class="cover-wrapper">
-
+          <div class="music-image">
             <img
               src="assets/covers/cover-04.jpg"
               alt="Portada de V4L3NT1NA"
+              loading="lazy"
             >
 
+            <div class="music-number">
+              04
+            </div>
           </div>
 
           <div class="music-info">
 
-            <span class="music-type">
+            <p class="music-type">
               SINGLE
-            </span>
+            </p>
 
             <h3>
               V4L3NT1NA
             </h3>
+
+            <p class="music-artist">
+              $parkø
+            </p>
 
             <div class="music-links">
 
               <a
                 href="https://on.soundcloud.com/9iZw66u1MbWTQA6ZVC"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                soundcloud ↗
+                SoundCloud ↗
               </a>
 
             </div>
@@ -386,37 +332,105 @@
         </article>
 
 
-        <!-- broken heart -->
+        <!-- =================================================
+             05 · POSICIONEXXX
+             COVER 05
+             ================================================= -->
 
-        <article class="music-card">
+        <article class="music-card reveal">
 
-          <div class="cover-wrapper">
-
+          <div class="music-image">
             <img
-              src="assets/covers/cover-06.jpeg"
-              alt="Portada de broken heart"
+              src="assets/covers/cover-05.webp"
+              alt="Portada de posicionexxx"
+              loading="lazy"
             >
 
+            <div class="music-number">
+              05
+            </div>
           </div>
 
           <div class="music-info">
 
-            <span class="music-type">
+            <p class="music-type">
+              COLLAB
+            </p>
+
+            <h3>
+              posicionexxx
+            </h3>
+
+            <p class="music-artist">
+              $parkø ft. darcofx$
+            </p>
+
+            <div class="music-links">
+
+              <a
+                href="https://on.soundcloud.com/w8E84XMBZjfyiRyvyC"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SoundCloud ↗
+              </a>
+
+              <a
+                href="https://youtu.be/1mI65Zmq7q4?si=52pvKAa9zKVv830a"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             06 · BROKEN HEART
+             COVER 06
+             ================================================= -->
+
+        <article class="music-card reveal">
+
+          <div class="music-image">
+            <img
+              src="assets/covers/cover-06.jpeg"
+              alt="Portada de broken heart"
+              loading="lazy"
+            >
+
+            <div class="music-number">
+              06
+            </div>
+          </div>
+
+          <div class="music-info">
+
+            <p class="music-type">
               EP 01 · TRACK 01
-            </span>
+            </p>
 
             <h3>
               broken heart
             </h3>
+
+            <p class="music-artist">
+              $parkø
+            </p>
 
             <div class="music-links">
 
               <a
                 href="https://on.soundcloud.com/qW6YrO9JZLyhezW2lK"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                soundcloud ↗
+                SoundCloud ↗
               </a>
 
             </div>
@@ -426,30 +440,40 @@
         </article>
 
 
-        <!-- Ø9/I1 -->
+        <!-- =================================================
+             07 · Ø9/I1
+             COVER 06
+             ================================================= -->
 
-        <article class="music-card">
+        <article class="music-card reveal">
 
-          <div class="cover-wrapper">
-
+          <div class="music-image">
             <img
               src="assets/covers/cover-06.jpeg"
               alt="Portada de Ø9/I1"
+              loading="lazy"
             >
 
+            <div class="music-number">
+              07
+            </div>
           </div>
 
           <div class="music-info">
 
-            <span class="music-type">
+            <p class="music-type">
               EP 01 · TRACK 02
-            </span>
+            </p>
 
             <h3>
               Ø9/I1
             </h3>
 
-            <p>
+            <p class="music-artist">
+              $parkø
+            </p>
+
+            <p class="music-description">
               dedicada a alguien especial.
             </p>
 
@@ -458,9 +482,9 @@
               <a
                 href="https://on.soundcloud.com/uQhUYGPDIoR0IWFv3B"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                soundcloud ↗
+                SoundCloud ↗
               </a>
 
             </div>
@@ -470,40 +494,47 @@
         </article>
 
 
-        <!-- broken heart solo -->
+        <!-- =================================================
+             08 · BROKEN HEART SOLO
+             COVER 07
+             ================================================= -->
 
-        <article class="music-card">
+        <article class="music-card reveal">
 
-          <div class="cover-wrapper">
-
+          <div class="music-image">
             <img
-              src="assets/covers/cover-05.webp"
+              src="assets/covers/cover-07.png"
               alt="Portada de broken heart solo voice versión"
+              loading="lazy"
             >
 
+            <div class="music-number">
+              08
+            </div>
           </div>
 
           <div class="music-info">
 
-            <span class="music-type">
+            <p class="music-type">
               SINGLE · 02.02.2026
-            </span>
+            </p>
 
             <h3>
               broken heart
-              <small>
-                solo voice versión
-              </small>
             </h3>
+
+            <p class="music-artist">
+              solo voice versión
+            </p>
 
             <div class="music-links">
 
               <a
                 href="https://on.soundcloud.com/RuNeblD0PoxjUj94ba"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                soundcloud ↗
+                SoundCloud ↗
               </a>
 
             </div>
@@ -513,15 +544,727 @@
         </article>
 
 
-        <!-- ★?±¿✡ -->
+        <!-- =================================================
+             09 · NOCTURNØS
+             COVER 08
+             ================================================= -->
 
-        <article class="music-card">
+        <article class="music-card music-card-featured reveal">
 
-          <div class="cover-wrapper">
+          <div class="music-image">
 
             <img
-              src="assets/covers/cover-02.jpg"
-              alt="Portada de ★?±¿✡"
+              src="assets/covers/cover-08.png"
+              alt="Portada de NOCTURNØS"
+              loading="lazy"
+            >
+
+            <div class="music-number">
+              09
+            </div>
+
+            <div class="featured-badge">
+              latest
+            </div>
+
+          </div>
+
+          <div class="music-info">
+
+            <p class="music-type">
+              SINGLE · 23.08.2026
+            </p>
+
+            <h3>
+              NOCTURNØS
+            </h3>
+
+            <p class="music-artist">
+              $parkø
+            </p>
+
+            <p class="music-description">
+              una canción para las noches que se sienten demasiado largas.
+            </p>
+
+            <div class="music-links">
+
+              <a
+                href="https://on.soundcloud.com/bcB9eDAL0E63TdFtyq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SoundCloud ↗
+              </a>
+
+              <a
+                href="https://youtu.be/J6kNi7nx5HY?si=N-_pW9eIA7Z4wFdN"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             10 · VØCE$
+             COVER 09
+             ================================================= -->
+
+        <article class="music-card reveal">
+
+          <div class="music-image">
+            <img
+              src="assets/covers/cover-09.jpg"
+              alt="Portada de vøce$"
+              loading="lazy"
+            >
+
+            <div class="music-number">
+              10
+            </div>
+          </div>
+
+          <div class="music-info">
+
+            <p class="music-type">
+              SINGLE
+            </p>
+
+            <h3>
+              vøce$
+            </h3>
+
+            <p class="music-artist">
+              $parkø
+            </p>
+
+            <div class="music-links">
+
+              <a
+                href="https://on.soundcloud.com/Zb7MhVsz8VWrVccPzC"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SoundCloud ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             11 · CIELO
+             COVER 05
+             ================================================= -->
+
+        <article class="music-card reveal">
+
+          <div class="music-image">
+            <img
+              src="assets/covers/cover-05.webp"
+              alt="Portada de cielo"
+              loading="lazy"
+            >
+
+            <div class="music-number">
+              11
+            </div>
+          </div>
+
+          <div class="music-info">
+
+            <p class="music-type">
+              SINGLE
+            </p>
+
+            <h3>
+              cielo
+            </h3>
+
+            <p class="music-artist">
+              $parkø
+            </p>
+
+            <div class="music-links">
+
+              <a
+                href="https://on.soundcloud.com/Ox1645Hqal8mAl3nSp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SoundCloud ↗
+              </a>
+
+              <a
+                href="https://youtu.be/bwIjYdg510E?si=NcNoH1zTaLmmAYYG"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             12 · NUCITA
+             COVER 05
+             ================================================= -->
+
+        <article class="music-card reveal">
+
+          <div class="music-image">
+            <img
+              src="assets/covers/cover-05.webp"
+              alt="Portada de nucita"
+              loading="lazy"
+            >
+
+            <div class="music-number">
+              12
+            </div>
+          </div>
+
+          <div class="music-info">
+
+            <p class="music-type">
+              SINGLE
+            </p>
+
+            <h3>
+              nucita🍬
+            </h3>
+
+            <p class="music-artist">
+              $parkø
+            </p>
+
+            <div class="music-links">
+
+              <a
+                href="https://on.soundcloud.com/pxmNC2FBwpw23r0gpw"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SoundCloud ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             13 · DEDICATED TO YOU
+             COVER 05
+             ================================================= -->
+
+        <article class="music-card reveal">
+
+          <div class="music-image">
+            <img
+              src="assets/covers/cover-05.webp"
+              alt="Portada de dedicated to you"
+              loading="lazy"
+            >
+
+            <div class="music-number">
+              13
+            </div>
+          </div>
+
+          <div class="music-info">
+
+            <p class="music-type">
+              SINGLE
+            </p>
+
+            <h3>
+              dedicated to you &lt;3
+            </h3>
+
+            <p class="music-artist">
+              $parkø
+            </p>
+
+            <div class="music-links">
+
+              <a
+                href="https://on.soundcloud.com/JH2YQddY7kQSbHrgwd"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SoundCloud ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ARTE
+         ===================================================== -->
+
+    <section class="section split-section" id="arte">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-number">02 / arte</p>
+
+          <h2>
+            imágenes que hablan
+          </h2>
+        </div>
+
+      </div>
+
+      <div class="text-block reveal">
+
+        <p>
+          Portadas, ideas, referencias, colores y cualquier
+          cosa que termine convirtiéndose en una imagen.
+        </p>
+
+        <p>
+          El universo de $parkø también existe fuera de la música.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PENSAMIENTOS
+         ===================================================== -->
+
+    <section class="section thoughts-section" id="pensamientos">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-number">03 / pensamientos</p>
+
+          <h2>
+            cosas que no dije en voz alta
+          </h2>
+        </div>
+
+        <p class="section-intro">
+          pequeñas páginas de una historia que todavía se está escribiendo.
+        </p>
+
+      </div>
+
+
+      <div class="thoughts-list">
+
+
+        <!-- ENTRADA 01 -->
+
+        <details class="thought reveal">
+
+          <summary>
+
+            <span class="thought-date">
+              19.08.2026
+            </span>
+
+            <span class="thought-title">
+              una pequeña parte de mí
+            </span>
+
+            <span class="thought-arrow">
+              ↘
+            </span>
+
+          </summary>
+
+          <div class="thought-content">
+
+            <p>
+              Esta es una pequeña parte de mí.
+              Mi música, mis ideas y todas esas cosas que
+              normalmente se quedan dando vueltas en mi cabeza.
+            </p>
+
+            <p>
+              $parkø es el nombre que elegí para compartir
+              todo eso con el mundo.
+            </p>
+
+            <p>
+              Acá voy a ir dejando canciones, proyectos,
+              colaboraciones y cualquier cosa nueva que vaya
+              formando parte de esta historia.
+            </p>
+
+          </div>
+
+        </details>
+
+
+        <!-- ENTRADA 02 -->
+
+        <details class="thought reveal">
+
+          <summary>
+
+            <span class="thought-date">
+              12.09.2026
+            </span>
+
+            <span class="thought-title">
+              otra entrada
+            </span>
+
+            <span class="thought-arrow">
+              ↘
+            </span>
+
+          </summary>
+
+          <div class="thought-content">
+
+            <p>
+              Terminé de grabar una canción que llevaba
+              un tiempo rondando por mi cabeza.
+            </p>
+
+            <p>
+              También hay una colaboración de tres personas
+              tomando forma poco a poco.
+            </p>
+
+            <p>
+              Algunas canciones nacen rápido.
+              Otras necesitan tiempo para encontrar su lugar.
+            </p>
+
+          </div>
+
+        </details>
+
+
+        <!-- ENTRADA 03 -->
+
+        <details class="thought reveal">
+
+          <summary>
+
+            <span class="thought-date">
+              18.09.2026
+            </span>
+
+            <span class="thought-title">
+              una página más de mi historia
+            </span>
+
+            <span class="thought-arrow">
+              ↘
+            </span>
+
+          </summary>
+
+          <div class="thought-content">
+
+            <p>
+              Una página más.
+            </p>
+
+            <p>
+              No todo tiene que estar completamente definido
+              para poder seguir avanzando.
+            </p>
+
+            <p>
+              Algunas cosas simplemente se viven,
+              se transforman y terminan convirtiéndose
+              en parte de la historia.
+            </p>
+
+          </div>
+
+        </details>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         VIDA
+         ===================================================== -->
+
+    <section class="section split-section" id="vida">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-number">04 / vida</p>
+
+          <h2>
+            fuera de las canciones
+          </h2>
+        </div>
+
+      </div>
+
+      <div class="text-block reveal">
+
+        <p>
+          La vida también es parte del proyecto.
+        </p>
+
+        <p>
+          Días buenos, días raros, noches largas,
+          ideas repentinas y momentos que terminan
+          convirtiéndose en música.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RANDOM
+         ===================================================== -->
+
+    <section class="section random-section" id="random">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-number">05 / random</p>
+
+          <h2>
+            cualquier cosa
+          </h2>
+        </div>
+
+      </div>
+
+      <div class="random-box reveal">
+
+        <p class="random-symbol">
+          333
+        </p>
+
+        <p>
+          Si existe en mi universo, probablemente
+          termine apareciendo acá.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         REDES
+         ===================================================== -->
+
+    <section class="social-section">
+
+      <p class="section-number">
+        encontrarme
+      </p>
+
+      <div class="social-links">
+
+        <a
+          href="https://on.soundcloud.com/6uKNnMMhVgDoQf3h8G"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SoundCloud
+        </a>
+
+        <a
+          href="https://youtube.com/@sparkovz?si=pl_8rs7adqpSXWN3"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@v_zel1?_r=1&_t=ZT-99oVkgBrSBh"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TikTok
+        </a>
+
+        <a
+          href="https://www.instagram.com/v_zel1?stkn=MXh5ZW1sZWM0MnZtbg=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer>
+
+    <div class="footer-logo">
+      $parkø
+    </div>
+
+    <p>
+      made somewhere under the moon 🌙
+    </p>
+
+    <p class="footer-year">
+      2009 · 333
+    </p>
+
+  </footer>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+  <script>
+
+    /* NAVBAR */
+
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+
+      if (window.scrollY > 40) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+
+    });
+
+
+    /* REVEAL ANIMATIONS */
+
+    const revealElements =
+      document.querySelectorAll(".reveal");
+
+    const revealObserver =
+      new IntersectionObserver(
+        (entries, observer) => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("visible");
+
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+
+    revealElements.forEach(element => {
+      revealObserver.observe(element);
+    });
+
+
+    /* THOUGHTS */
+
+    const thoughts =
+      document.querySelectorAll(".thought");
+
+    thoughts.forEach(currentThought => {
+
+      currentThought.addEventListener("toggle", () => {
+
+        if (currentThought.open) {
+
+          thoughts.forEach(otherThought => {
+
+            if (otherThought !== currentThought) {
+              otherThought.removeAttribute("open");
+            }
+
+          });
+
+        }
+
+      });
+
+    });
+
+
+    /* SMOOTH ANCHOR SCROLL */
+
+    document.querySelectorAll('a[href^="#"]')
+      .forEach(link => {
+
+        link.addEventListener("click", event => {
+
+          const target =
+            document.querySelector(
+              link.getAttribute("href")
+            );
+
+          if (!target) return;
+
+          event.preventDefault();
+
+          target.scrollIntoView({
+            behavior: "smooth"
+          });
+
+        });
+
+      });
+
+  </script>
+
+</body>
+  </html>      alt="Portada de ★?±¿✡"
             >
 
           </div>
