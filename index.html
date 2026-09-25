@@ -2,15 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>$parkø · lunar love</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <meta
     name="description"
     content="$parkø. Música, arte, pensamientos, vida y cualquier cosa que exista en este universo."
   >
 
+  <title>$parkø · lunar love</title>
+
+  <!-- =========================
+       FUENTES
+  ========================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -24,410 +31,1934 @@
 
 <body>
 
+  <!-- =========================
+       AMBIENTE
+  ========================== -->
+
   <div class="noise"></div>
 
-  <!-- =====================================================
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+
+  <!-- =========================
        NAVBAR
-       ===================================================== -->
+  ========================== -->
 
-  <header class="navbar">
+  <nav class="navbar">
 
-    <a href="#inicio" class="logo">$parkø</a>
+    <a href="#inicio" class="nav-logo">
+      $parkø
+    </a>
 
-    <nav class="nav-links">
+    <div class="nav-links">
       <a href="#musica">música</a>
       <a href="#arte">arte</a>
       <a href="#pensamientos">pensamientos</a>
       <a href="#vida">vida</a>
       <a href="#random">random</a>
-    </nav>
+    </div>
 
-    <span class="nav-orbit">333</span>
+    <button
+      class="nav-orb"
+      id="secretOrb"
+      aria-label="secret"
+    >
+      333
+    </button>
 
-  </header>
+  </nav>
 
 
-  <!-- =====================================================
+  <!-- =========================
        HERO
-       ===================================================== -->
+  ========================== -->
 
   <main id="inicio">
 
     <section class="hero">
 
-      <div class="hero-stars"></div>
+      <!-- estrellas -->
+      <div class="stars">
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>·</span>
+        <span>✦</span>
+        <span>˚</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>·</span>
+        <span>✦</span>
+        <span>˚</span>
+        <span>·</span>
+        <span>✧</span>
+      </div>
+
+
+      <!-- lore flotante -->
+
+      <div class="lore lore-01">2009</div>
+      <div class="lore lore-02">333</div>
+      <div class="lore lore-03">03:33 AM</div>
+      <div class="lore lore-04">GUATEMALA</div>
+      <div class="lore lore-05">NOCTURNØS</div>
+      <div class="lore lore-06">EP 01</div>
+      <div class="lore lore-07">EP 02</div>
+      <div class="lore lore-08">STILL CREATING</div>
+      <div class="lore lore-09">LUNAR LOVE</div>
+      <div class="lore lore-10">SOUND IN THE DARK</div>
+      <div class="lore lore-11">FROM MY ROOM</div>
+      <div class="lore lore-12">UN DÍA CON $PARKØ</div>
+
+
+      <!-- mensajes secretos -->
+
+      <div class="secret-lore secret-lore-01">
+        Dulce
+      </div>
+
+      <div class="secret-lore secret-lore-02">
+        Mirella
+      </div>
+
+      <div class="secret-lore secret-lore-03">
+        Nucita
+      </div>
+
+      <div class="secret-lore secret-lore-04">
+        ojitos
+      </div>
+
+      <div class="secret-lore secret-lore-05">
+        te amo
+      </div>
+
+
+      <!-- fragmentos -->
+
+      <div class="fragment fragment-01">
+        una pequeña parte de mí
+      </div>
+
+      <div class="fragment fragment-02">
+        las noches que se sienten demasiado largas
+      </div>
+
+      <div class="fragment fragment-03">
+        todavía estoy escribiendo esta parte
+      </div>
+
+
+      <!-- glow -->
 
       <div class="hero-glow"></div>
 
-      <div class="hero-orbit orbit-one"></div>
-      <div class="hero-orbit orbit-two"></div>
-      <div class="hero-orbit orbit-three"></div>
+      <!-- órbitas -->
 
-      <!-- LORE -->
-
-      <div class="lore-layer" aria-hidden="true">
-
-        <span class="lore lore-01">2009</span>
-        <span class="lore lore-02">333</span>
-        <span class="lore lore-03">03:33 AM</span>
-        <span class="lore lore-04">GUATEMALA</span>
-        <span class="lore lore-05">NOCTURNØS</span>
-        <span class="lore lore-06">EP 01</span>
-        <span class="lore lore-07">EP 02</span>
-        <span class="lore lore-08">STILL CREATING</span>
-        <span class="lore lore-09">LUNAR LOVE</span>
-        <span class="lore lore-10">SOUND IN THE DARK</span>
-        <span class="lore lore-11">FROM MY ROOM</span>
-        <span class="lore lore-12">UN DÍA CON $PARKØ</span>
-
-        <!-- EASTER EGGS -->
-
-        <span class="lore-secret secret-01">Dulce</span>
-        <span class="lore-secret secret-02">Mirella</span>
-        <span class="lore-secret secret-03">Nucita</span>
-        <span class="lore-secret secret-04">ojitos</span>
-        <span class="lore-secret secret-05">te amo</span>
-
-        <span class="lore-fragment fragment-01">
-          una pequeña parte de mí
-        </span>
-
-        <span class="lore-fragment fragment-02">
-          las noches que se sienten demasiado largas
-        </span>
-
-        <span class="lore-fragment fragment-03">
-          todavía estoy escribiendo esta parte
-        </span>
-
-      </div>
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+      <div class="orbit orbit-three"></div>
 
 
-      <!-- MOON -->
+      <!-- luna -->
 
       <div class="moon">
-        <span></span>
-        <i></i>
+        <div class="moon-crater crater-one"></div>
+        <div class="moon-crater crater-two"></div>
+        <div class="moon-crater crater-three"></div>
+        <div class="moon-crater crater-four"></div>
       </div>
 
 
-      <!-- HERO CONTENT -->
+      <!-- contenido -->
 
       <div class="hero-content">
 
-        <p class="hero-small">
-          2009 · 333 · guatemala
+        <p class="hero-kicker">
+          FROM MY ROOM · 03:33 AM
         </p>
 
-        <div class="hero-title-wrap">
-
-          <span class="hero-side-note">
-            archive / 001
-          </span>
-
-          <h1>$parkø</h1>
-
-          <span class="hero-side-note right">
-            03:33
-          </span>
-
-        </div>
+        <h1>
+          $parkø
+        </h1>
 
         <p class="hero-subtitle">
           lunar love
         </p>
 
         <p class="hero-description">
-          música, pensamientos, arte y todo aquello
-          que no sé dónde más guardar.
+          música, arte, pensamientos,
+          vida y cualquier cosa que exista
+          en este universo.
         </p>
 
-        <a href="#musica" class="hero-button">
-          entrar al universo ↓
-        </a>
+        <div class="hero-actions">
+
+          <a href="#musica" class="button button-primary">
+            entrar al archivo
+          </a>
+
+          <a href="#pensamientos" class="button button-ghost">
+            leer pensamientos
+          </a>
+
+        </div>
 
       </div>
 
 
       <div class="hero-bottom">
 
-        <span>scroll to explore</span>
+        <span>
+          SCROLL TO EXPLORE
+        </span>
 
         <span class="scroll-line"></span>
 
-        <span>∞</span>
+        <span>
+          333
+        </span>
 
       </div>
 
     </section>
 
 
-    <!-- ===================================================
+    <!-- =========================
          MÚSICA
-         =================================================== -->
+    ========================== -->
 
-    <section id="musica" class="section music-section">
+    <section
+      id="musica"
+      class="section music-section"
+    >
 
-      <div class="section-heading">
-
-        <span class="section-number">01</span>
+      <div class="section-heading reveal">
 
         <div>
-          <p class="eyebrow">archivo sonoro / 333</p>
-          <h2>música</h2>
+          <span class="section-index">
+            01 / music
+          </span>
+
+          <h2>
+            música
+          </h2>
         </div>
 
-        <span class="heading-note">
-          sound in the dark
-        </span>
+        <p>
+          canciones hechas desde mi habitación,
+          mis noches y todo lo que no supe decir.
+        </p>
 
       </div>
 
 
       <!-- PLAYER -->
 
-      <div class="player">
+      <div class="player reveal">
 
-        <div class="player-top-line">
-          <span>NOW PLAYING</span>
-          <span id="playerStatus">ARCHIVE 09</span>
+        <div class="player-cover">
+
+          <img
+            id="playerCover"
+            src="assets/covers/cover-08.png"
+            alt="NOCTURNØS"
+          >
+
+          <div class="player-cover-glow"></div>
+
         </div>
 
-        <div class="player-main">
 
-          <div class="player-cover-wrap">
+        <div class="player-info">
 
-            <img
-              id="playerCover"
-              src="assets/covers/cover-08.png"
-              alt="Portada de NOCTURNØS"
-              class="player-cover"
+          <span class="player-label">
+            $parkø PLAYER
+          </span>
+
+          <h3 id="playerTitle">
+            NOCTURNØS
+          </h3>
+
+          <p id="playerMeta">
+            SINGLE · 23.08.2026
+          </p>
+
+          <div class="player-progress">
+            <span></span>
+          </div>
+
+          <div class="player-controls">
+
+            <button id="prevTrack">
+              ↶
+            </button>
+
+            <button
+              id="playTrack"
+              class="play-button"
             >
+              ▶
+            </button>
 
-            <div class="player-glow"></div>
-
-            <div class="player-corner">333</div>
-
-          </div>
-
-
-          <div class="player-info">
-
-            <span class="player-label">$parkø PLAYER</span>
-
-            <h3 id="playerTitle">NOCTURNØS</h3>
-
-            <p id="playerArtist">$parkø</p>
-
-            <div class="player-links">
-
-              <a
-                id="playerSoundcloud"
-                href="https://on.soundcloud.com/bcB9eDAL0E63TdFtyq"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                soundcloud ↗
-              </a>
-
-              <a
-                id="playerYoutube"
-                href="https://youtu.be/J6kNi7nx5HY?si=N-_pW9eIA7Z4wFdN"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                youtube ↗
-              </a>
-
-            </div>
+            <button id="nextTrack">
+              ↷
+            </button>
 
           </div>
 
         </div>
 
 
-        <div class="player-controls">
+        <div class="player-links">
 
-          <button id="prevBtn" class="player-btn" aria-label="Canción anterior">
-            ⏮
-          </button>
+          <a
+            id="playerSoundcloud"
+            href="https://on.soundcloud.com/bcB9eDAL0E63TdFtyq"
+            target="_blank"
+            rel="noopener"
+          >
+            SoundCloud ↗
+          </a>
 
-          <button id="playBtn" class="player-play" aria-label="Reproducir">
-            ▶
-          </button>
+          <a
+            id="playerYoutube"
+            href="https://youtu.be/J6kNi7nx5HY?si=N-_pW9eIA7Z4wFdN"
+            target="_blank"
+            rel="noopener"
+          >
+            YouTube ↗
+          </a>
 
-          <button id="nextBtn" class="player-btn" aria-label="Siguiente canción">
-            ⏭
-          </button>
-
-        </div>
-
-
-        <div class="player-progress">
-
-          <span id="currentTime">0:00</span>
-
-          <div class="progress-bar">
-            <div id="progressFill" class="progress-fill"></div>
-          </div>
-
-          <span id="totalTime">--:--</span>
-
-        </div>
-
-
-        <div class="player-note">
-          <span></span>
-          selecciona una canción para entrar en ella
         </div>
 
       </div>
 
 
-      <!-- DISCOGRAFÍA -->
-
-      <div class="archive-label">
-        <span>ARCHIVE</span>
-        <span>13 PIECES</span>
-      </div>
-
+      <!-- DISCOS -->
 
       <div class="music-grid">
 
 
-        <!-- 01 -->
+        <!-- ★?±¿✡ -->
 
         <article
-          class="music-card"
+          class="music-card reveal"
           data-title="★?±¿✡"
-          data-artist="$parkø"
           data-cover="assets/covers/cover-01.webp"
+          data-meta="SINGLE"
           data-soundcloud="https://on.soundcloud.com/dO6muYwL5DWSt9LiMT"
           data-youtube=""
         >
 
-          <div class="cover-wrap">
-
-            <span class="card-index">01</span>
-
-            <img src="assets/covers/cover-01.webp" alt="★?±¿✡">
-
-            <button class="card-play" aria-label="Reproducir ★?±¿✡">
-              ▶
-            </button>
-
+          <div class="card-number">
+            01
           </div>
 
-          <div class="music-info">
-            <h3>★?±¿✡</h3>
-            <p>$parkø</p>
+          <div class="card-sparkles">
+            <i>✦</i>
+            <i>·</i>
+            <i>✧</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-01.webp"
+            alt="★?±¿✡"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              SINGLE
+            </span>
+
+            <h3>
+              ★?±¿✡
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
           </div>
 
         </article>
 
 
-        <!-- 02 -->
+        <!-- 333 -->
 
         <article
-          class="music-card"
+          class="music-card reveal"
           data-title="333💗"
-          data-artist="$parkø"
           data-cover="assets/covers/cover-02.jpg"
+          data-meta="SINGLE"
           data-soundcloud="https://on.soundcloud.com/IAtjPyojiQaMia3cz2"
           data-youtube=""
         >
 
-          <div class="cover-wrap">
-
-            <span class="card-index">02</span>
-
-            <img src="assets/covers/cover-02.jpg" alt="333💗">
-
-            <button class="card-play" aria-label="Reproducir 333💗">
-              ▶
-            </button>
-
+          <div class="card-number">
+            02
           </div>
 
-          <div class="music-info">
-            <h3>333💗</h3>
-            <p>$parkø</p>
+          <div class="card-sparkles">
+            <i>✧</i>
+            <i>·</i>
+            <i>✦</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-02.jpg"
+            alt="333💗"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              SINGLE
+            </span>
+
+            <h3>
+              333💗
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
           </div>
 
         </article>
 
 
-        <!-- 03 -->
+        <!-- SATURNO -->
 
         <article
-          class="music-card"
+          class="music-card reveal"
           data-title="saturno"
-          data-artist="$parkø ft. darcofx$"
           data-cover="assets/covers/cover-03.webp"
+          data-meta="$parkø ft. darcofx$"
           data-soundcloud="https://on.soundcloud.com/bGSTIyZGIjMDBisPoX"
           data-youtube="https://youtu.be/pxv3ITpl8Ao?si=vNNilDSX1Gxpvj2L"
         >
 
-          <div class="cover-wrap">
-
-            <span class="card-index">03</span>
-
-            <img src="assets/covers/cover-03.webp" alt="saturno">
-
-            <button class="card-play" aria-label="Reproducir saturno">
-              ▶
-            </button>
-
+          <div class="card-number">
+            03
           </div>
 
-          <div class="music-info">
-            <h3>saturno</h3>
-            <p>$parkø ft. darcofx$</p>
+          <div class="card-sparkles">
+            <i>✦</i>
+            <i>˚</i>
+            <i>✧</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-03.webp"
+            alt="saturno"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              $parkø ft. darcofx$
+            </span>
+
+            <h3>
+              saturno
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
           </div>
 
         </article>
 
 
-        <!-- 04 -->
+        <!-- VALENTINA -->
 
         <article
-          class="music-card"
+          class="music-card reveal"
           data-title="V4L3NT1NA"
-          data-artist="$parkø"
           data-cover="assets/covers/cover-04.jpg"
+          data-meta="SINGLE"
           data-soundcloud="https://on.soundcloud.com/9iZw66u1MbWTQA6ZVC"
           data-youtube=""
         >
 
-          <div class="cover-wrap">
-
-            <span class="card-index">04</span>
-
-            <img src="assets/covers/cover-04.jpg" alt="V4L3NT1NA">
-
-            <button class="card-play" aria-label="Reproducir V4L3NT1NA">
-              ▶
-            </button>
-
+          <div class="card-number">
+            04
           </div>
 
-          <div class="music-info">
-            <h3>V4L3NT1NA</h3>
-            <p>$parkø</p>
+          <div class="card-sparkles">
+            <i>·</i>
+            <i>✦</i>
+            <i>·</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-04.jpg"
+            alt="V4L3NT1NA"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              SINGLE
+            </span>
+
+            <h3>
+              V4L3NT1NA
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
           </div>
 
         </article>
 
 
-        <!-- 05 -->
+        <!-- POSICIONEXXX -->
 
         <article
-          class="music-card"
+          class="music-card reveal"
           data-title="posicionexxx"
-          data-artist="$parkø ft. darcofx$"
           data-cover="assets/covers/cover-05.webp"
+          data-meta="$parkø ft. darcofx$"
           data-soundcloud="https://on.soundcloud.com/w8E84XMBZjfyiRyvyC"
           data-youtube="https://youtu.be/1mI65Zmq7q4?si=52pvKAa9zKVv830a"
+        >
+
+          <div class="card-number">
+            05
+          </div>
+
+          <div class="card-sparkles">
+            <i>✧</i>
+            <i>˚</i>
+            <i>✦</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-05.webp"
+            alt="posicionexxx"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              $parkø ft. darcofx$
+            </span>
+
+            <h3>
+              posicionexxx
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- BROKEN HEART -->
+
+        <article
+          class="music-card reveal"
+          data-title="broken heart"
+          data-cover="assets/covers/cover-06.jpeg"
+          data-meta="EP 01 · TRACK 01"
+          data-soundcloud="https://on.soundcloud.com/qW6YrO9JZLyhezW2lK"
+          data-youtube=""
+        >
+
+          <div class="card-number">
+            06
+          </div>
+
+          <div class="card-sparkles">
+            <i>✦</i>
+            <i>·</i>
+            <i>✧</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-06.jpeg"
+            alt="broken heart"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              EP 01 · TRACK 01
+            </span>
+
+            <h3>
+              broken heart
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- Ø9/I1 -->
+
+        <article
+          class="music-card reveal"
+          data-title="Ø9/I1"
+          data-cover="assets/covers/cover-06.jpeg"
+          data-meta="EP 01 · TRACK 02"
+          data-soundcloud="https://on.soundcloud.com/uQhUYGPDIoR0IWFv3B"
+          data-youtube=""
+        >
+
+          <div class="card-number">
+            07
+          </div>
+
+          <div class="card-sparkles">
+            <i>·</i>
+            <i>✦</i>
+            <i>˚</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-06.jpeg"
+            alt="Ø9/I1"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              EP 01 · TRACK 02
+            </span>
+
+            <h3>
+              Ø9/I1
+            </h3>
+
+            <small>
+              dedicada a alguien especial.
+            </small>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- SOLO -->
+
+        <article
+          class="music-card reveal"
+          data-title="broken heart"
+          data-cover="assets/covers/cover-07.png"
+          data-meta="SINGLE · 02.02.2026"
+          data-soundcloud="https://on.soundcloud.com/RuNeblD0PoxjUj94ba"
+          data-youtube=""
+        >
+
+          <div class="card-number">
+            08
+          </div>
+
+          <div class="card-sparkles">
+            <i>✦</i>
+            <i>˚</i>
+            <i>·</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-07.png"
+            alt="broken heart solo voice"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              SINGLE · 02.02.2026
+            </span>
+
+            <h3>
+              broken heart
+            </h3>
+
+            <small>
+              solo voice versión
+            </small>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- NOCTURNØS -->
+
+        <article
+          class="music-card music-featured reveal"
+          data-title="NOCTURNØS"
+          data-cover="assets/covers/cover-08.png"
+          data-meta="SINGLE · 23.08.2026"
+          data-soundcloud="https://on.soundcloud.com/bcB9eDAL0E63TdFtyq"
+          data-youtube="https://youtu.be/J6kNi7nx5HY?si=N-_pW9eIA7Z4wFdN"
+        >
+
+          <div class="featured-tag">
+            CURRENT
+          </div>
+
+          <div class="card-number">
+            09
+          </div>
+
+          <div class="card-sparkles">
+            <i>✦</i>
+            <i>✧</i>
+            <i>˚</i>
+            <i>✦</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-08.png"
+            alt="NOCTURNØS"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              SINGLE · 23.08.2026
+            </span>
+
+            <h3>
+              NOCTURNØS
+            </h3>
+
+            <small>
+              una canción para las noches
+              que se sienten demasiado largas.
+            </small>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- VOCE$ -->
+
+        <article
+          class="music-card reveal"
+          data-title="vøce$"
+          data-cover="assets/covers/cover-09.jpg"
+          data-meta="SINGLE"
+          data-soundcloud="https://on.soundcloud.com/Zb7MhVsz8VWrVccPzC"
+          data-youtube=""
+        >
+
+          <div class="card-number">
+            10
+          </div>
+
+          <div class="card-sparkles">
+            <i>˚</i>
+            <i>✦</i>
+            <i>·</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-09.jpg"
+            alt="vøce$"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              SINGLE
+            </span>
+
+            <h3>
+              vøce$
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- CIELO -->
+
+        <article
+          class="music-card reveal"
+          data-title="cielo"
+          data-cover="assets/covers/cover-05.webp"
+          data-meta="SINGLE"
+          data-soundcloud="https://on.soundcloud.com/Ox1645Hqal8mAl3nSp"
+          data-youtube="https://youtu.be/bwIjYdg510E?si=NcNoH1zTaLmmAYYG"
+        >
+
+          <div class="card-number">
+            11
+          </div>
+
+          <div class="card-sparkles">
+            <i>✧</i>
+            <i>·</i>
+            <i>✦</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-05.webp"
+            alt="cielo"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              SINGLE
+            </span>
+
+            <h3>
+              cielo
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- NUCITA -->
+
+        <article
+          class="music-card reveal"
+          data-title="nucita🍬"
+          data-cover="assets/covers/cover-05.webp"
+          data-meta="SINGLE"
+          data-soundcloud="https://on.soundcloud.com/pxmNC2FBwpw23r0gpw"
+          data-youtube=""
+        >
+
+          <div class="card-number">
+            12
+          </div>
+
+          <div class="card-sparkles">
+            <i>·</i>
+            <i>˚</i>
+            <i>✧</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-05.webp"
+            alt="nucita"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              SINGLE
+            </span>
+
+            <h3>
+              nucita🍬
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- DEDICATED -->
+
+        <article
+          class="music-card reveal"
+          data-title="dedicated to you <3"
+          data-cover="assets/covers/cover-05.webp"
+          data-meta="SINGLE"
+          data-soundcloud="https://on.soundcloud.com/JH2YQddY7kQSbHrgwd"
+          data-youtube=""
+        >
+
+          <div class="card-number">
+            13
+          </div>
+
+          <div class="card-sparkles">
+            <i>✦</i>
+            <i>·</i>
+            <i>˚</i>
+          </div>
+
+          <img
+            src="assets/covers/cover-05.webp"
+            alt="dedicated to you"
+          >
+
+          <div class="music-card-overlay"></div>
+
+          <div class="music-card-info">
+
+            <span>
+              SINGLE
+            </span>
+
+            <h3>
+              dedicated to you &lt;3
+            </h3>
+
+            <button class="card-play">
+              play ↗
+            </button>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ARTE
+    ========================== -->
+
+    <section
+      id="arte"
+      class="section archive-section"
+    >
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="section-index">
+            02 / visual archive
+          </span>
+
+          <h2>
+            arte
+          </h2>
+        </div>
+
+        <p>
+          imágenes, videos, ideas, portadas,
+          experimentos y cosas que todavía
+          no sé cómo llamar.
+        </p>
+
+      </div>
+
+
+      <div class="archive-wall reveal">
+
+        <div class="archive-empty">
+
+          <span class="archive-symbol">
+            333
+          </span>
+
+          <h3>
+            todavía estoy creando
+          </h3>
+
+          <p>
+            este espacio pronto será un archivo
+            visual de todo lo que vaya apareciendo.
+          </p>
+
+          <span class="archive-note">
+            IMAGE · VIDEO · AUDIO · EVERYTHING
+          </span>
+
+        </div>
+
+
+        <div class="archive-decoration archive-deco-one">
+          ✦
+        </div>
+
+        <div class="archive-decoration archive-deco-two">
+          ˚
+        </div>
+
+        <div class="archive-decoration archive-deco-three">
+          ✧
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PENSAMIENTOS
+    ========================== -->
+
+    <section
+      id="pensamientos"
+      class="section thoughts-section"
+    >
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="section-index">
+            03 / public archive
+          </span>
+
+          <h2>
+            pensamientos
+          </h2>
+        </div>
+
+        <p>
+          pequeñas partes de mí,
+          escritas sin demasiadas explicaciones.
+        </p>
+
+      </div>
+
+
+      <div class="public-wall reveal">
+
+        <div class="wall-header">
+
+          <div>
+            <span>
+              PUBLIC WALL
+            </span>
+
+            <strong>
+              abierto
+            </strong>
+          </div>
+
+          <span>
+            333 / thoughts
+          </span>
+
+        </div>
+
+
+        <!-- entrada 01 -->
+
+        <article class="thought-card">
+
+          <div class="thought-date">
+            19.08.2026
+          </div>
+
+          <div class="thought-content">
+
+            <h3>
+              una pequeña parte de mí
+            </h3>
+
+            <p class="thought-intro">
+              supongo que esta es una pequeña
+              parte de mí.
+            </p>
+
+            <details>
+
+              <summary>
+                leer entrada →
+              </summary>
+
+              <div class="thought-body">
+
+                <p>
+                  $parkø no es solamente un nombre
+                  que aparece en una canción o en una
+                  portada. Es una parte de mí que
+                  decidí convertir en algo que pudiera
+                  existir fuera de mi cabeza.
+                </p>
+
+                <p>
+                  aquí quiero guardar música, arte,
+                  pensamientos, proyectos y todas esas
+                  cosas que probablemente todavía no
+                  sé explicar.
+                </p>
+
+                <p>
+                  quizá algún día vuelva a leer esto
+                  y recuerde exactamente quién era
+                  mientras estaba construyendo todo.
+                </p>
+
+                <p>
+                  todavía queda muchísimo por hacer.
+                </p>
+
+              </div>
+
+            </details>
+
+          </div>
+
+        </article>
+
+
+        <!-- entrada 02 -->
+
+        <article class="thought-card">
+
+          <div class="thought-date">
+            12.09.2026
+          </div>
+
+          <div class="thought-content">
+
+            <h3>
+              otra entrada
+            </h3>
+
+            <p class="thought-intro">
+              terminé una canción.
+            </p>
+
+            <details>
+
+              <summary>
+                leer entrada →
+              </summary>
+
+              <div class="thought-body">
+
+                <p>
+                  terminé de grabar una canción
+                  que tenía pendiente.
+                </p>
+
+                <p>
+                  también estoy trabajando en una
+                  colaboración de tres personas que
+                  poco a poco está tomando forma.
+                </p>
+
+                <p>
+                  algunas canciones aparecen de la nada
+                  y otras necesitan tiempo.
+                </p>
+
+                <p>
+                  supongo que esta etapa también forma
+                  parte de aprender qué quiero decir
+                  con mi música.
+                </p>
+
+              </div>
+
+            </details>
+
+          </div>
+
+        </article>
+
+
+        <!-- entrada 03 -->
+
+        <article class="thought-card">
+
+          <div class="thought-date">
+            18.09.2026
+          </div>
+
+          <div class="thought-content">
+
+            <h3>
+              una página más de mi historia
+            </h3>
+
+            <p class="thought-intro">
+              otra página, otro momento.
+            </p>
+
+            <details>
+
+              <summary>
+                leer entrada →
+              </summary>
+
+              <div class="thought-body">
+
+                <p>
+                  no sé exactamente hacia dónde va
+                  todo esto.
+                </p>
+
+                <p>
+                  pero sigo creando mientras intento
+                  descubrirlo.
+                </p>
+
+                <p>
+                  quizá de eso se trata esta página:
+                  dejar algunas huellas mientras
+                  avanzo.
+                </p>
+
+              </div>
+
+            </details>
+
+          </div>
+
+        </article>
+
+
+        <div class="wall-future">
+
+          <span>
+            NEXT ENTRY
+          </span>
+
+          <p>
+            próximamente desde algún lugar
+            entre las 03:33 y el amanecer.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         VIDA
+    ========================== -->
+
+    <section
+      id="vida"
+      class="section life-section"
+    >
+
+      <div class="split-layout reveal">
+
+        <div class="split-main">
+
+          <span class="section-index">
+            04 / life
+          </span>
+
+          <h2>
+            vida
+          </h2>
+
+          <p>
+            no todo tiene que convertirse
+            en una canción.
+          </p>
+
+          <p>
+            algunas cosas simplemente
+            pasan, se quedan conmigo
+            y terminan formando parte
+            de la historia.
+          </p>
+
+        </div>
+
+
+        <div class="life-orbit">
+
+          <div class="life-orbit-ring"></div>
+
+          <span>
+            2009
+          </span>
+
+          <span>
+            333
+          </span>
+
+          <span>
+            $parkø
+          </span>
+
+          <span>
+            still here
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         RANDOM
+    ========================== -->
+
+    <section
+      id="random"
+      class="section random-section"
+    >
+
+      <div class="random-card reveal">
+
+        <div class="random-top">
+
+          <span>
+            05 / random
+          </span>
+
+          <span>
+            333
+          </span>
+
+        </div>
+
+        <div class="random-center">
+
+          <span class="random-big">
+            333
+          </span>
+
+          <h2>
+            cualquier cosa
+          </h2>
+
+          <p>
+            pensamientos raros,
+            ideas repentinas,
+            referencias,
+            obsesiones temporales
+            y cosas que simplemente
+            quería poner aquí.
+          </p>
+
+        </div>
+
+        <div class="random-bottom">
+
+          <span>
+            no hay algoritmo
+          </span>
+
+          <span>
+            solo $parkø
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOCIAL
+    ========================== -->
+
+    <section class="social-section">
+
+      <div class="social-inner reveal">
+
+        <span class="section-index">
+          FIND ME ELSEWHERE
+        </span>
+
+        <h2>
+          si llegaste hasta aquí,
+          probablemente ya sabes dónde buscar.
+        </h2>
+
+
+        <div class="social-links">
+
+          <a
+            href="https://on.soundcloud.com/6uKNnMMhVgDoQf3h8G"
+            target="_blank"
+            rel="noopener"
+          >
+            SoundCloud ↗
+          </a>
+
+          <a
+            href="https://youtube.com/@sparkovz?si=pl_8rs7adqpSXWN3"
+            target="_blank"
+            rel="noopener"
+          >
+            YouTube ↗
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@v_zel1?_r=1&_t=ZT-99oVkgBrSBh"
+            target="_blank"
+            rel="noopener"
+          >
+            TikTok ↗
+          </a>
+
+          <a
+            href="https://www.instagram.com/v_zel1?stkn=MXh5ZW1sZWM0MnZtbg=="
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       SECRET OVERLAY
+  ========================== -->
+
+  <div
+    class="secret-overlay"
+    id="secretOverlay"
+  >
+
+    <div class="secret-window">
+
+      <span class="secret-small">
+        ARCHIVE ACCESS
+      </span>
+
+      <h2>
+        333
+      </h2>
+
+      <p>
+        todavía hay cosas que no están
+        escritas aquí.
+      </p>
+
+      <span class="secret-code">
+        FROM MY ROOM · 03:33 AM
+      </span>
+
+      <button id="closeSecret">
+        cerrar
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="footer-top">
+
+      <span>
+        $parkø
+      </span>
+
+      <span>
+        lunar love
+      </span>
+
+      <span>
+        333
+      </span>
+
+    </div>
+
+    <p>
+      hecho desde mi habitación.
+    </p>
+
+    <p class="footer-year">
+      © 2026 $parkø
+    </p>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    /* =========================
+       PLAYER
+    ========================== */
+
+    const cards = [
+      ...document.querySelectorAll(".music-card")
+    ];
+
+    const playerCover =
+      document.getElementById("playerCover");
+
+    const playerTitle =
+      document.getElementById("playerTitle");
+
+    const playerMeta =
+      document.getElementById("playerMeta");
+
+    const playerSoundcloud =
+      document.getElementById("playerSoundcloud");
+
+    const playerYoutube =
+      document.getElementById("playerYoutube");
+
+    const playTrack =
+      document.getElementById("playTrack");
+
+    let currentTrack = 8;
+    let visualPlaying = false;
+
+
+    function updatePlayer(index) {
+
+      const card = cards[index];
+
+      if (!card) return;
+
+      currentTrack = index;
+
+      const title =
+        card.dataset.title;
+
+      const cover =
+        card.dataset.cover;
+
+      const meta =
+        card.dataset.meta;
+
+      const soundcloud =
+        card.dataset.soundcloud;
+
+      const youtube =
+        card.dataset.youtube;
+
+
+      playerCover.src = cover;
+      playerCover.alt = title;
+
+      playerTitle.textContent = title;
+      playerMeta.textContent = meta;
+
+      playerSoundcloud.href =
+        soundcloud || "#";
+
+      if (youtube) {
+
+        playerYoutube.href = youtube;
+        playerYoutube.style.display =
+          "inline-flex";
+
+      } else {
+
+        playerYoutube.style.display =
+          "none";
+
+      }
+
+
+      cards.forEach(cardItem => {
+
+        cardItem.classList.remove(
+          "is-current"
+        );
+
+      });
+
+      card.classList.add(
+        "is-current"
+      );
+
+      visualPlaying = false;
+
+      playTrack.textContent = "▶";
+
+    }
+
+
+    cards.forEach((card, index) => {
+
+      const button =
+        card.querySelector(".card-play");
+
+      button.addEventListener(
+        "click",
+        event => {
+
+          event.stopPropagation();
+
+          updatePlayer(index);
+
+          const url =
+            card.dataset.soundcloud;
+
+          if (url) {
+
+            window.open(
+              url,
+              "_blank",
+              "noopener"
+            );
+
+          }
+
+        }
+      );
+
+
+      card.addEventListener(
+        "click",
+        () => {
+
+          updatePlayer(index);
+
+        }
+      );
+
+    });
+
+
+    playTrack.addEventListener(
+      "click",
+      () => {
+
+        visualPlaying =
+          !visualPlaying;
+
+        playTrack.textContent =
+          visualPlaying ? "Ⅱ" : "▶";
+
+        document
+          .querySelector(".player")
+          .classList.toggle(
+            "is-playing",
+            visualPlaying
+          );
+
+      }
+    );
+
+
+    document
+      .getElementById("prevTrack")
+      .addEventListener(
+        "click",
+        () => {
+
+          let next =
+            currentTrack - 1;
+
+          if (next < 0) {
+            next = cards.length - 1;
+          }
+
+          updatePlayer(next);
+
+        }
+      );
+
+
+    document
+      .getElementById("nextTrack")
+      .addEventListener(
+        "click",
+        () => {
+
+          let next =
+            currentTrack + 1;
+
+          if (next >= cards.length) {
+            next = 0;
+          }
+
+          updatePlayer(next);
+
+        }
+      );
+
+
+    /* =========================
+       ONE THOUGHT OPEN AT A TIME
+    ========================== */
+
+    const details =
+      document.querySelectorAll(
+        ".thought-card details"
+      );
+
+    details.forEach(detail => {
+
+      detail.addEventListener(
+        "toggle",
+        () => {
+
+          if (!detail.open) return;
+
+          details.forEach(other => {
+
+            if (
+              other !== detail &&
+              other.open
+            ) {
+
+              other.open = false;
+
+            }
+
+          });
+
+        }
+      );
+
+    });
+
+
+    /* =========================
+       REVEAL
+    ========================== */
+
+    const revealElements =
+      document.querySelectorAll(
+        ".reveal"
+      );
+
+
+    const observer =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (
+              entry.isIntersecting
+            ) {
+
+              entry.target.classList.add(
+                "visible"
+              );
+
+              observer.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+
+    revealElements.forEach(
+      element => observer.observe(element)
+    );
+
+
+    /* =========================
+       SECRET 333
+    ========================== */
+
+    const secretOrb =
+      document.getElementById(
+        "secretOrb"
+      );
+
+    const secretOverlay =
+      document.getElementById(
+        "secretOverlay"
+      );
+
+    const closeSecret =
+      document.getElementById(
+        "closeSecret"
+      );
+
+    let secretClicks = 0;
+
+    let secretTimer;
+
+
+    secretOrb.addEventListener(
+      "click",
+      () => {
+
+        secretClicks++;
+
+        clearTimeout(secretTimer);
+
+        secretTimer =
+          setTimeout(() => {
+
+            secretClicks = 0;
+
+          }, 1800);
+
+
+        if (secretClicks >= 3) {
+
+          secretOverlay.classList.add(
+            "active"
+          );
+
+          document.body.classList.add(
+            "secret-mode"
+          );
+
+          secretClicks = 0;
+
+        }
+
+      }
+    );
+
+
+    closeSecret.addEventListener(
+      "click",
+      () => {
+
+        secretOverlay.classList.remove(
+          "active"
+        );
+
+        document.body.classList.remove(
+          "secret-mode"
+        );
+
+      }
+    );
+
+
+    secretOverlay.addEventListener(
+      "click",
+      event => {
+
+        if (
+          event.target === secretOverlay
+        ) {
+
+          secretOverlay.classList.remove(
+            "active"
+          );
+
+          document.body.classList.remove(
+            "secret-mode"
+          );
+
+        }
+
+      }
+    );
+
+
+    /* =========================
+       SMOOTH NAV
+    ========================== */
+
+    document
+      .querySelectorAll(
+        'a[href^="#"]'
+      )
+      .forEach(link => {
+
+        link.addEventListener(
+          "click",
+          event => {
+
+            const target =
+              document.querySelector(
+                link.getAttribute("href")
+              );
+
+            if (!target) return;
+
+            event.preventDefault();
+
+            target.scrollIntoView({
+              behavior: "smooth"
+            });
+
+          }
+        );
+
+      });
+
+
+    /* =========================
+       INIT
+    ========================== */
+
+    updatePlayer(8);
+
+  </script>
+
+</body>
+          </html>I65Zmq7q4?si=52pvKAa9zKVv830a"
         >
 
           <div class="cover-wrap">
