@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-
   <meta charset="UTF-8">
 
   <meta
@@ -11,13 +10,16 @@
   >
 
   <meta
+    name="theme-color"
+    content="#08040d"
+  >
+
+  <meta
     name="description"
     content="$parkø. Música, arte, pensamientos, vida y cualquier cosa que exista en este universo."
   >
 
   <title>$parkø · lunar love</title>
-
-  <!-- GOOGLE FONTS -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -32,22 +34,15 @@
     rel="stylesheet"
   >
 
-  <!-- CSS -->
-
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
+  <!-- ATMÓSFERA -->
 
-  <!-- =====================================================
-       AMBIENTE
-  ====================================================== -->
+  <div class="space-background"></div>
 
   <div class="noise"></div>
 
@@ -55,68 +50,44 @@
   <div class="ambient ambient-two"></div>
   <div class="ambient ambient-three"></div>
 
+  <div class="nebula nebula-one"></div>
+  <div class="nebula nebula-two"></div>
+
+  <div class="stars" aria-hidden="true">
+    <span>✦</span>
+    <span>·</span>
+    <span>✧</span>
+    <span>·</span>
+    <span>✦</span>
+    <span>✧</span>
+    <span>·</span>
+    <span>✦</span>
+    <span>·</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>·</span>
+  </div>
+
+  <div class="dust" aria-hidden="true"></div>
+
   <div class="cursor-glow"></div>
 
 
-  <div
-    class="stars"
-    aria-hidden="true"
-  >
+  <!-- NAV -->
 
-    <span>✦</span>
-    <span>·</span>
-    <span>✧</span>
-    <span>·</span>
-    <span>✦</span>
-    <span>✧</span>
-    <span>·</span>
-    <span>✦</span>
-    <span>·</span>
-    <span>✧</span>
-    <span>✦</span>
-    <span>·</span>
+  <header class="nav" id="mainNav">
 
-  </div>
-
-
-  <!-- =====================================================
-       NAV
-  ====================================================== -->
-
-  <header class="nav">
-
-    <a
-      href="#inicio"
-      class="logo"
-    >
+    <a href="#inicio" class="logo">
       $parkø
     </a>
 
-
     <nav>
-
-      <a href="#musica">
-        música
-      </a>
-
-      <a href="#arte">
-        arte
-      </a>
-
-      <a href="#pensamientos">
-        pensamientos
-      </a>
-
-      <a href="#vida">
-        vida
-      </a>
-
-      <a href="#random">
-        random
-      </a>
-
+      <a href="#musica">música</a>
+      <a href="#arte">arte</a>
+      <a href="#pensamientos">pensamientos</a>
+      <a href="#vida">vida</a>
+      <a href="#random">random</a>
     </nav>
-
 
     <button
       class="secret-orb"
@@ -129,21 +100,22 @@
   </header>
 
 
-  <!-- =====================================================
-       CONTENIDO PRINCIPAL
-  ====================================================== -->
+  <!-- MAIN -->
 
   <main>
 
 
-    <!-- ===================================================
-         HERO
-    ==================================================== -->
+    <!-- HERO -->
 
     <section
       class="hero"
       id="inicio"
     >
+
+      <div class="hero-welcome">
+        el universo de $parkø se divide en varios lugares.
+        <span>depende de ti encontrarlos.</span>
+      </div>
 
 
       <div class="hero-copy">
@@ -152,39 +124,26 @@
           2009 · 333 · guatemala
         </p>
 
-
         <h1>
           $parkø
         </h1>
-
 
         <p class="hero-subtitle">
           lunar love
         </p>
 
-
         <p class="hero-description">
-
           música, arte, pensamientos, vida
-
           <br>
-
           y cualquier cosa que exista en este universo.
-
         </p>
-
 
         <a
           href="#musica"
           class="enter"
         >
-
           entrar al universo
-
-          <span>
-            ↓
-          </span>
-
+          <span>↓</span>
         </a>
 
       </div>
@@ -198,16 +157,17 @@
         <div class="orbit orbit-2"></div>
         <div class="orbit orbit-3"></div>
 
+        <div class="orbit-dot dot-one"></div>
+        <div class="orbit-dot dot-two"></div>
+        <div class="orbit-dot dot-three"></div>
 
         <div class="moon">
           <span></span>
         </div>
 
-
         <div class="moon-code">
           03:33
         </div>
-
 
         <div class="floating-word word-one">
           Dulce
@@ -229,82 +189,60 @@
           te amo
         </div>
 
+        <div class="floating-word word-six">
+          333
+        </div>
+
       </div>
 
 
       <div class="scroll-indicator">
-
         <span></span>
-
         scroll
-
       </div>
-
 
     </section>
 
 
-    <!-- =====================================================
-         MANIFIESTO
-    ====================================================== -->
+    <!-- MANIFIESTO -->
 
     <section class="manifesto reveal">
 
       <p>
-
         una pequeña parte de mí
-
-        <span>
-          convertida en sonido.
-        </span>
-
+        <span>convertida en sonido.</span>
       </p>
 
     </section>
 
 
-    <!-- =====================================================
-         MÚSICA
-    ====================================================== -->
+    <!-- MÚSICA -->
 
     <section
       class="section"
       id="musica"
     >
 
-
       <div class="section-heading reveal">
 
         <div>
-
-          <span class="section-number">
-            01
-          </span>
+          <span class="section-number">01</span>
 
           <h2>
             música
           </h2>
-
         </div>
 
-
         <p>
-
           archivo sonoro
-
           <br>
-
           FROM MY ROOM
-
         </p>
 
       </div>
 
 
-      <!-- PLAYER -->
-
       <div class="music-feature reveal">
-
 
         <div class="feature-cover">
 
@@ -314,13 +252,12 @@
             alt="NOCTURNØS"
           >
 
-
           <div class="cover-overlay">
+            <span>currently playing</span>
+          </div>
 
-            <span>
-              currently playing
-            </span>
-
+          <div class="cover-corner">
+            333
           </div>
 
         </div>
@@ -332,22 +269,16 @@
             $PARKØ RADIO
           </span>
 
-
           <h3 id="playerTitle">
             NOCTURNØS
           </h3>
 
-
           <p id="playerDescription">
-
             una canción para las noches
             que se sienten demasiado largas.
-
           </p>
 
-
           <div class="player-buttons">
-
 
             <a
               id="soundcloudBtn"
@@ -358,7 +289,6 @@
               SoundCloud ↗
             </a>
 
-
             <a
               id="youtubeBtn"
               href="https://youtu.be/J6kNi7nx5HY?si=N-_pW9eIA7Z4wFdN"
@@ -368,7 +298,6 @@
               YouTube ↗
             </a>
 
-
           </div>
 
         </div>
@@ -376,15 +305,8 @@
       </div>
 
 
-      <!-- ================================================
-           MUSIC GRID
-      ================================================= -->
-
-
       <div class="music-grid">
 
-
-        <!-- 01 · ★?±¿✡ -->
 
         <article
           class="music-card reveal"
@@ -396,43 +318,23 @@
         >
 
           <div class="card-cover">
-
             <img
               src="assets/covers/cover-01.webp"
               alt="★?±¿✡"
             >
 
-            <button
-              class="play-card"
-              aria-label="Reproducir ★?±¿✡"
-            >
-              +
-            </button>
-
+            <button class="play-card">+</button>
           </div>
-
 
           <div class="card-meta">
-
-            <span>
-              01
-            </span>
-
-            <span>
-              archivo
-            </span>
-
+            <span>01</span>
+            <span>archivo</span>
           </div>
 
-
-          <h3>
-            ★?±¿✡
-          </h3>
+          <h3>★?±¿✡</h3>
 
         </article>
 
-
-        <!-- 02 · 333💗 -->
 
         <article
           class="music-card reveal"
@@ -444,43 +346,23 @@
         >
 
           <div class="card-cover">
-
             <img
               src="assets/covers/cover-02.jpg"
               alt="333💗"
             >
 
-            <button
-              class="play-card"
-              aria-label="Reproducir 333"
-            >
-              +
-            </button>
-
+            <button class="play-card">+</button>
           </div>
-
 
           <div class="card-meta">
-
-            <span>
-              02
-            </span>
-
-            <span>
-              333
-            </span>
-
+            <span>02</span>
+            <span>333</span>
           </div>
 
-
-          <h3>
-            333💗
-          </h3>
+          <h3>333💗</h3>
 
         </article>
 
-
-        <!-- 03 · SATURNO -->
 
         <article
           class="music-card reveal"
@@ -492,43 +374,23 @@
         >
 
           <div class="card-cover">
-
             <img
               src="assets/covers/cover-03.webp"
               alt="saturno"
             >
 
-            <button
-              class="play-card"
-              aria-label="Reproducir saturno"
-            >
-              +
-            </button>
-
+            <button class="play-card">+</button>
           </div>
-
 
           <div class="card-meta">
-
-            <span>
-              03
-            </span>
-
-            <span>
-              ft. darcofx$
-            </span>
-
+            <span>03</span>
+            <span>ft. darcofx$</span>
           </div>
 
-
-          <h3>
-            saturno
-          </h3>
+          <h3>saturno</h3>
 
         </article>
 
-
-        <!-- 04 · V4L3NT1NA -->
 
         <article
           class="music-card reveal"
@@ -540,43 +402,23 @@
         >
 
           <div class="card-cover">
-
             <img
               src="assets/covers/cover-04.jpg"
               alt="V4L3NT1NA"
             >
 
-            <button
-              class="play-card"
-              aria-label="Reproducir V4L3NT1NA"
-            >
-              +
-            </button>
-
+            <button class="play-card">+</button>
           </div>
-
 
           <div class="card-meta">
-
-            <span>
-              04
-            </span>
-
-            <span>
-              single
-            </span>
-
+            <span>04</span>
+            <span>single</span>
           </div>
 
-
-          <h3>
-            V4L3NT1NA
-          </h3>
+          <h3>V4L3NT1NA</h3>
 
         </article>
 
-
-        <!-- 05 · POSICIONEXXX -->
 
         <article
           class="music-card reveal"
@@ -588,6 +430,1567 @@
         >
 
           <div class="card-cover">
+            <img
+              src="assets/covers/cover-05.webp"
+              alt="posicionexxx"
+            >
+
+            <button class="play-card">+</button>
+          </div>
+
+          <div class="card-meta">
+            <span>05</span>
+            <span>ft. darcofx$</span>
+          </div>
+
+          <h3>posicionexxx</h3>
+
+        </article>
+
+
+        <article
+          class="music-card reveal"
+          data-title="broken heart"
+          data-cover="assets/covers/cover-06.jpeg"
+          data-description="cuando todavía no sabes cómo soltar."
+          data-sc="https://on.soundcloud.com/qW6YrO9JZLyhezW2lK"
+          data-yt=""
+        >
+
+          <div class="card-cover">
+            <img
+              src="assets/covers/cover-06.jpeg"
+              alt="broken heart"
+            >
+
+            <button class="play-card">+</button>
+          </div>
+
+          <div class="card-meta">
+            <span>06</span>
+            <span>EP 01</span>
+          </div>
+
+          <h3>broken heart</h3>
+
+        </article>
+
+
+        <article
+          class="music-card reveal"
+          data-title="Ø9/I1"
+          data-cover="assets/covers/cover-06.jpeg"
+          data-description="dedicated to someone special."
+          data-sc="https://on.soundcloud.com/uQhUyGPDIoR0IWFv3B"
+          data-yt=""
+        >
+
+          <div class="card-cover">
+            <img
+              src="assets/covers/cover-06.jpeg"
+              alt="Ø9/I1"
+            >
+
+            <button class="play-card">+</button>
+          </div>
+
+          <div class="card-meta">
+            <span>07</span>
+            <span>EP 01</span>
+          </div>
+
+          <h3>Ø9/I1</h3>
+
+        </article>
+
+
+        <article
+          class="music-card reveal"
+          data-title="broken heart (solo voice versión)"
+          data-cover="assets/covers/cover-07.png"
+          data-description="solo voice versión."
+          data-sc="https://on.soundcloud.com/RuNeblD0PoxjUj94ba"
+          data-yt=""
+        >
+
+          <div class="card-cover">
+            <img
+              src="assets/covers/cover-07.png"
+              alt="broken heart solo voice"
+            >
+
+            <button class="play-card">+</button>
+          </div>
+
+          <div class="card-meta">
+            <span>08</span>
+            <span>solo voice</span>
+          </div>
+
+          <h3>broken heart</h3>
+
+        </article>
+
+
+        <article
+          class="music-card reveal"
+          data-title="NOCTURNØS"
+          data-cover="assets/covers/cover-08.png"
+          data-description="una canción para las noches que se sienten demasiado largas."
+          data-sc="https://on.soundcloud.com/bcB9eDAL0E63TdFtyq"
+          data-yt="https://youtu.be/J6kNi7nx5HY?si=N-_pW9eIA7Z4wFdN"
+        >
+
+          <div class="card-cover">
+            <img
+              src="assets/covers/cover-08.png"
+              alt="NOCTURNØS"
+            >
+
+            <button class="play-card">+</button>
+          </div>
+
+          <div class="card-meta">
+            <span>09</span>
+            <span>23.08.2026</span>
+          </div>
+
+          <h3>NOCTURNØS</h3>
+
+        </article>
+
+
+        <article
+          class="music-card reveal"
+          data-title="vøce$"
+          data-cover="assets/covers/cover-09.jpg"
+          data-description="una voz perdida en el ruido."
+          data-sc="https://on.soundcloud.com/Zb7MhVsz8VWrVccPzC"
+          data-yt=""
+        >
+
+          <div class="card-cover">
+            <img
+              src="assets/covers/cover-09.jpg"
+              alt="vøce$"
+            >
+
+            <button class="play-card">+</button>
+          </div>
+
+          <div class="card-meta">
+            <span>10</span>
+            <span>archive</span>
+          </div>
+
+          <h3>vøce$</h3>
+
+        </article>
+
+
+        <article
+          class="music-card reveal"
+          data-title="cielo en 33"
+          data-cover="assets/covers/cover-05.webp"
+          data-description="mirando arriba mientras todo cambia."
+          data-sc="https://on.soundcloud.com/Ox1645Hqal8mAl3nSp"
+          data-yt="https://youtu.be/bwIjYdg510E?si=NcNoH1zTaLmmAYYG"
+        >
+
+          <div class="card-cover">
+            <img
+              src="assets/covers/cover-05.webp"
+              alt="cielo en 33"
+            >
+
+            <button class="play-card">+</button>
+          </div>
+
+          <div class="card-meta">
+            <span>11</span>
+            <span>archive</span>
+          </div>
+
+          <h3>cielo en 33</h3>
+
+        </article>
+
+
+        <article
+          class="music-card reveal"
+          data-title="nucita🍬"
+          data-cover="assets/covers/cover-05.webp"
+          data-description="dulce, simple y peligrosa para el corazón."
+          data-sc="https://on.soundcloud.com/pxmNC2FBwpw23r0gpw"
+          data-yt=""
+        >
+
+          <div class="card-cover">
+            <img
+              src="assets/covers/cover-05.webp"
+              alt="nucita"
+            >
+
+            <button class="play-card">+</button>
+          </div>
+
+          <div class="card-meta">
+            <span>12</span>
+            <span>archive</span>
+          </div>
+
+          <h3>nucita🍬</h3>
+
+        </article>
+
+
+        <article
+          class="music-card reveal"
+          data-title="dedicated to you <3"
+          data-cover="assets/covers/cover-05.webp"
+          data-description="for someone who knows."
+          data-sc="https://on.soundcloud.com/JH2YQddY7kQSbHrgwd"
+          data-yt=""
+        >
+
+          <div class="card-cover">
+            <img
+              src="assets/covers/cover-05.webp"
+              alt="dedicated to you"
+            >
+
+            <button class="play-card">+</button>
+          </div>
+
+          <div class="card-meta">
+            <span>13</span>
+            <span>private universe</span>
+          </div>
+
+          <h3>dedicated to you &lt;3</h3>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- REFERENCIA -->
+
+    <section class="hidden-reference reveal">
+
+      <p>
+        i feel like a <span>suei</span>
+      </p>
+
+      <small>
+        pero sigo siendo $parkø.
+      </small>
+
+    </section>
+
+
+    <!-- ARTE -->
+
+    <section
+      class="section"
+      id="arte"
+    >
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="section-number">02</span>
+
+          <h2>arte</h2>
+        </div>
+
+        <p>
+          visual archive
+          <br>
+          LUNAR LOVE
+        </p>
+
+      </div>
+
+
+      <div class="archive-intro reveal">
+
+        <span>VISUAL ARCHIVE / 333</span>
+
+        <p>
+          imágenes, videos, portadas, ideas,
+          recuerdos y cosas que todavía no sé cómo llamar.
+        </p>
+
+      </div>
+
+
+      <div
+        class="art-grid"
+        id="artGrid"
+      >
+
+        <article class="art-piece art-large reveal">
+          <div class="art-placeholder">
+            <span>333</span>
+            <small>visual 01</small>
+          </div>
+        </article>
+
+        <article class="art-piece reveal">
+          <div class="art-placeholder">
+            <span>2009</span>
+            <small>visual 02</small>
+          </div>
+        </article>
+
+        <article class="art-piece reveal">
+          <div class="art-placeholder">
+            <span>03:33</span>
+            <small>visual 03</small>
+          </div>
+        </article>
+
+      </div>
+
+
+      <div class="quiz-zone reveal">
+
+        <span class="tiny-label">
+          $PARKØ TEST
+        </span>
+
+        <h3>
+          ¿cuánto encontraste?
+        </h3>
+
+        <p>
+          algunas cosas solamente aparecen
+          cuando miras dos veces.
+        </p>
+
+        <button id="startQuiz">
+          descubrir
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- PENSAMIENTOS -->
+
+    <section
+      class="section thoughts-section"
+      id="pensamientos"
+    >
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="section-number">03</span>
+
+          <h2>pensamientos</h2>
+        </div>
+
+        <p>
+          diario
+          <br>
+          FROM MY ROOM
+        </p>
+
+      </div>
+
+
+      <div class="notebook reveal">
+
+        <div class="notebook-header">
+
+          <span>
+            notebook / $parkø
+          </span>
+
+          <span>
+            333
+          </span>
+
+        </div>
+
+
+        <div
+          class="thoughts-list"
+          id="thoughtsList"
+        >
+
+          <article class="thought">
+
+            <span class="thought-date">
+              19.08.2026
+            </span>
+
+            <div>
+
+              <h3>
+                todavía estoy escribiendo esta parte.
+              </h3>
+
+              <p>
+                quizá crecer también sea aceptar que
+                algunas respuestas llegan después de la canción.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="thought">
+
+            <span class="thought-date">
+              12.09.2026
+            </span>
+
+            <div>
+
+              <h3>
+                las noches que se sienten demasiado largas.
+              </h3>
+
+              <p>
+                hay cosas que solamente tienen sentido
+                cuando son las 3:33 de la mañana.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="thought">
+
+            <span class="thought-date">
+              18.09.2026
+            </span>
+
+            <div>
+
+              <h3>
+                una pequeña parte de mí.
+              </h3>
+
+              <p>
+                todo esto empezó como música.
+                terminó convirtiéndose en una forma de guardar recuerdos.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="notebook-scribble">
+          sigue escribiendo...
+        </div>
+
+      </div>
+
+
+      <button
+        class="journal-button"
+        id="openJournal"
+      >
+        + escribir pensamiento
+      </button>
+
+    </section>
+
+
+    <!-- VIDA -->
+
+    <section
+      class="section life-section"
+      id="vida"
+    >
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="section-number">04</span>
+
+          <h2>vida</h2>
+        </div>
+
+        <p>
+          offline / online
+        </p>
+
+      </div>
+
+
+      <div class="life-intro reveal">
+
+        <div class="life-big">
+          2009
+        </div>
+
+        <div class="life-text">
+
+          <p>
+            aprendiendo.
+            creando.
+            desapareciendo.
+            volviendo.
+          </p>
+
+          <p>
+            desde Guatemala,
+            desde mi habitación,
+            desde cualquier lugar donde exista una idea.
+          </p>
+
+          <span class="life-code">
+            STILL CREATING
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="life-feed"
+        id="lifeFeed"
+      >
+
+        <article class="life-post reveal">
+
+          <div class="life-post-top">
+            <span>01</span>
+            <span>from my room</span>
+          </div>
+
+          <h3>
+            esto también es parte de la historia.
+          </h3>
+
+          <p>
+            no todo lo que pasa termina convertido
+            en canción.
+          </p>
+
+        </article>
+
+
+        <article class="life-post life-post-dark reveal">
+
+          <div class="life-post-top">
+            <span>333</span>
+            <span>offline</span>
+          </div>
+
+          <h3>
+            Guatemala, pero en otra dimensión.
+          </h3>
+
+          <p>
+            algunos lugares existen solamente
+            cuando los recuerdas.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- RANDOM -->
+
+    <section
+      class="section random-section"
+      id="random"
+    >
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="section-number">05</span>
+
+          <h2>random</h2>
+        </div>
+
+        <p>
+          cualquier cosa
+          <br>
+          que se me ocurra
+        </p>
+
+      </div>
+
+
+      <div class="random-box reveal">
+
+        <span class="random-label">
+          $PARKØ RANDOMIZER
+        </span>
+
+        <p id="randomText">
+          click para descubrir algo.
+        </p>
+
+        <button id="randomButton">
+          generar
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="final-section reveal">
+
+      <p class="final-small">
+        SOUND IN THE DARK
+      </p>
+
+      <h2>
+        nos vemos
+        <br>
+        del otro lado.
+      </h2>
+
+      <p class="final-code">
+        $parkø · 333 · 2009
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="socials">
+
+      <a
+        href="https://on.soundcloud.com/6uKNnMMhVgDoQf3h8G"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        SoundCloud
+      </a>
+
+      <a
+        href="https://youtube.com/@sparkovz?si=pl_8rs7adqpSXWN3"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube
+      </a>
+
+      <a
+        href="https://www.tiktok.com/@v_zel1?_r=1&_t=ZT-99oVkgBrSBh"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        TikTok
+      </a>
+
+      <a
+        href="https://www.instagram.com/v_zel1?stkn=MXh5ZW1sZWM0MnZtbg=="
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+
+    </div>
+
+    <p>
+      made from my room · Guatemala
+    </p>
+
+  </footer>
+
+
+  <!-- JOURNAL MODAL -->
+
+  <div
+    class="modal"
+    id="journalModal"
+    aria-hidden="true"
+  >
+
+    <div class="modal-box">
+
+      <button
+        class="modal-close"
+        id="closeJournal"
+        aria-label="Cerrar"
+      >
+        ×
+      </button>
+
+      <span>
+        NEW ENTRY
+      </span>
+
+      <input
+        type="text"
+        id="journalTitle"
+        placeholder="título..."
+      >
+
+      <textarea
+        id="journalContent"
+        placeholder="escribe lo que tengas en la cabeza..."
+      ></textarea>
+
+      <button id="saveJournal">
+        guardar pensamiento
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- QUIZ MODAL -->
+
+  <div
+    class="modal"
+    id="quizModal"
+    aria-hidden="true"
+  >
+
+    <div class="modal-box quiz-box">
+
+      <button
+        class="modal-close"
+        id="closeQuiz"
+      >
+        ×
+      </button>
+
+      <span>
+        333 / TEST
+      </span>
+
+      <h3 id="quizQuestion">
+        ¿cuál aparece más veces en este universo?
+      </h3>
+
+      <div class="quiz-options">
+
+        <button data-answer="0">
+          2009
+        </button>
+
+        <button data-answer="1">
+          333
+        </button>
+
+        <button data-answer="2">
+          03:33
+        </button>
+
+      </div>
+
+      <p
+        class="quiz-result"
+        id="quizResult"
+      ></p>
+
+    </div>
+
+  </div>
+
+
+  <!-- SECRET MODE -->
+
+  <div
+    class="secret-mode"
+    id="secretMode"
+  >
+
+    <div class="secret-inner">
+
+      <span>
+        333
+      </span>
+
+      <h2>
+        you found the other side.
+      </h2>
+
+      <p>
+        no había nada que encontrar.
+        <br>
+        y aun así llegaste.
+      </p>
+
+      <button id="closeSecret">
+        volver
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    /* ==============================
+       REVEAL
+    ============================== */
+
+    const reveals =
+      document.querySelectorAll(".reveal");
+
+    const observer =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.10
+        }
+      );
+
+    reveals.forEach(element => {
+      observer.observe(element);
+    });
+
+
+    /* ==============================
+       CURSOR
+    ============================== */
+
+    const cursorGlow =
+      document.querySelector(".cursor-glow");
+
+    document.addEventListener(
+      "pointermove",
+      event => {
+
+        if (!cursorGlow) return;
+
+        cursorGlow.style.left =
+          event.clientX + "px";
+
+        cursorGlow.style.top =
+          event.clientY + "px";
+
+      }
+    );
+
+
+    /* ==============================
+       NAVBAR
+    ============================== */
+
+    const nav =
+      document.getElementById("mainNav");
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        const scroll =
+          window.scrollY;
+
+        if (scroll > 80) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+
+        document.body.style.setProperty(
+          "--scroll-progress",
+          Math.min(
+            scroll /
+            (document.body.scrollHeight -
+            window.innerHeight),
+            1
+          )
+        );
+
+      },
+      { passive: true }
+    );
+
+
+    /* ==============================
+       MUSIC
+    ============================== */
+
+    const musicCards =
+      document.querySelectorAll(".music-card");
+
+    const playerCover =
+      document.getElementById("playerCover");
+
+    const playerTitle =
+      document.getElementById("playerTitle");
+
+    const playerDescription =
+      document.getElementById("playerDescription");
+
+    const soundcloudBtn =
+      document.getElementById("soundcloudBtn");
+
+    const youtubeBtn =
+      document.getElementById("youtubeBtn");
+
+
+    musicCards.forEach(card => {
+
+      const button =
+        card.querySelector(".play-card");
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          const title =
+            card.dataset.title;
+
+          const cover =
+            card.dataset.cover;
+
+          const description =
+            card.dataset.description;
+
+          const soundcloud =
+            card.dataset.sc;
+
+          const youtube =
+            card.dataset.yt;
+
+
+          playerTitle.textContent =
+            title;
+
+          playerCover.src =
+            cover;
+
+          playerCover.alt =
+            title;
+
+          playerDescription.textContent =
+            description;
+
+
+          if (soundcloud) {
+
+            soundcloudBtn.href =
+              soundcloud;
+
+            soundcloudBtn.style.display =
+              "inline-flex";
+
+          } else {
+
+            soundcloudBtn.style.display =
+              "none";
+
+          }
+
+
+          if (youtube) {
+
+            youtubeBtn.href =
+              youtube;
+
+            youtubeBtn.style.display =
+              "inline-flex";
+
+          } else {
+
+            youtubeBtn.style.display =
+              "none";
+
+          }
+
+
+          const feature =
+            document.querySelector(".music-feature");
+
+          feature.classList.remove("music-pulse");
+
+          void feature.offsetWidth;
+
+          feature.classList.add("music-pulse");
+
+
+          feature.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+          });
+
+        }
+      );
+
+    });
+
+
+    /* ==============================
+       RANDOM
+    ============================== */
+
+    const randomButton =
+      document.getElementById("randomButton");
+
+    const randomText =
+      document.getElementById("randomText");
+
+
+    const randomThings = [
+
+      "03:33 otra vez.",
+      "pon música y desaparece un rato.",
+      "todo esto empezó desde una habitación.",
+      "333.",
+      "todavía estoy creando.",
+      "maybe mañana.",
+      "lunar love.",
+      "Guatemala, pero en otra dimensión.",
+      "NOCTURNØS.",
+      "i feel like a suei.",
+      "$parkø was here.",
+      "no todo necesita explicación.",
+      "haz la canción.",
+      "sigue creando.",
+      "🪐",
+      "maybe alguien encontró esto.",
+      "no mires demasiado.",
+      "2009 nunca fue casualidad."
+
+    ];
+
+
+    randomButton.addEventListener(
+      "click",
+      () => {
+
+        const random =
+          randomThings[
+            Math.floor(
+              Math.random() *
+              randomThings.length
+            )
+          ];
+
+        randomText.classList.remove(
+          "random-pop"
+        );
+
+        void randomText.offsetWidth;
+
+        randomText.textContent =
+          random;
+
+        randomText.classList.add(
+          "random-pop"
+        );
+
+      }
+    );
+
+
+    /* ==============================
+       JOURNAL
+    ============================== */
+
+    const journalModal =
+      document.getElementById("journalModal");
+
+    const openJournal =
+      document.getElementById("openJournal");
+
+    const closeJournal =
+      document.getElementById("closeJournal");
+
+    const saveJournal =
+      document.getElementById("saveJournal");
+
+    const journalTitle =
+      document.getElementById("journalTitle");
+
+    const journalContent =
+      document.getElementById("journalContent");
+
+    const thoughtsList =
+      document.getElementById("thoughtsList");
+
+
+    function closeJournalModal() {
+
+      journalModal.classList.remove("open");
+
+      journalModal.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+    }
+
+
+    openJournal.addEventListener(
+      "click",
+      () => {
+
+        journalModal.classList.add("open");
+
+        journalModal.setAttribute(
+          "aria-hidden",
+          "false"
+        );
+
+        journalTitle.focus();
+
+      }
+    );
+
+
+    closeJournal.addEventListener(
+      "click",
+      closeJournalModal
+    );
+
+
+    journalModal.addEventListener(
+      "click",
+      event => {
+
+        if (
+          event.target ===
+          journalModal
+        ) {
+          closeJournalModal();
+        }
+
+      }
+    );
+
+
+    function loadLocalThoughts() {
+
+      const entries =
+        JSON.parse(
+          localStorage.getItem(
+            "sparkoThoughts"
+          ) || "[]"
+        );
+
+
+      entries.forEach(entry => {
+
+        const article =
+          document.createElement("article");
+
+        article.className =
+          "thought local-thought";
+
+
+        article.innerHTML = `
+
+          <span class="thought-date">
+            ${entry.date}
+          </span>
+
+          <div>
+
+            <h3>
+              ${escapeHTML(entry.title)}
+            </h3>
+
+            <p>
+              ${escapeHTML(entry.content)}
+            </p>
+
+          </div>
+
+        `;
+
+        thoughtsList.prepend(article);
+
+      });
+
+    }
+
+
+    function escapeHTML(text) {
+
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+    }
+
+
+    loadLocalThoughts();
+
+
+    saveJournal.addEventListener(
+      "click",
+      () => {
+
+        const title =
+          journalTitle.value.trim();
+
+        const content =
+          journalContent.value.trim();
+
+
+        if (!title || !content) {
+
+          journalTitle.classList.add(
+            "shake"
+          );
+
+          setTimeout(() => {
+            journalTitle.classList.remove(
+              "shake"
+            );
+          }, 400);
+
+          return;
+
+        }
+
+
+        const date =
+          new Date().toLocaleDateString(
+            "es-GT",
+            {
+              day: "2-digit",
+              month: "2-digit",
+              year: "numeric"
+            }
+          );
+
+
+        const entry = {
+          title,
+          content,
+          date
+        };
+
+
+        const entries =
+          JSON.parse(
+            localStorage.getItem(
+              "sparkoThoughts"
+            ) || "[]"
+          );
+
+
+        entries.unshift(entry);
+
+
+        localStorage.setItem(
+          "sparkoThoughts",
+          JSON.stringify(entries)
+        );
+
+
+        const article =
+          document.createElement("article");
+
+        article.className =
+          "thought local-thought";
+
+
+        article.innerHTML = `
+
+          <span class="thought-date">
+            ${date}
+          </span>
+
+          <div>
+
+            <h3>
+              ${escapeHTML(title)}
+            </h3>
+
+            <p>
+              ${escapeHTML(content)}
+            </p>
+
+          </div>
+
+        `;
+
+
+        thoughtsList.prepend(article);
+
+
+        journalTitle.value = "";
+        journalContent.value = "";
+
+
+        closeJournalModal();
+
+      }
+    );
+
+
+    /* ==============================
+       QUIZ
+    ============================== */
+
+    const quizModal =
+      document.getElementById("quizModal");
+
+    const startQuiz =
+      document.getElementById("startQuiz");
+
+    const closeQuiz =
+      document.getElementById("closeQuiz");
+
+    const quizResult =
+      document.getElementById("quizResult");
+
+
+    startQuiz.addEventListener(
+      "click",
+      () => {
+
+        quizModal.classList.add("open");
+
+        quizModal.setAttribute(
+          "aria-hidden",
+          "false"
+        );
+
+        quizResult.textContent = "";
+
+      }
+    );
+
+
+    closeQuiz.addEventListener(
+      "click",
+      () => {
+
+        quizModal.classList.remove("open");
+
+        quizModal.setAttribute(
+          "aria-hidden",
+          "true"
+        );
+
+      }
+    );
+
+
+    document
+      .querySelectorAll(".quiz-options button")
+      .forEach(button => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            if (
+              button.dataset.answer === "1"
+            ) {
+
+              quizResult.textContent =
+                "333. siempre estuvo ahí. ♡";
+
+              quizResult.className =
+                "quiz-result correct";
+
+            } else {
+
+              quizResult.textContent =
+                "casi... mira otra vez 👁";
+
+              quizResult.className =
+                "quiz-result";
+
+            }
+
+          }
+        );
+
+      });
+
+
+    /* ==============================
+       SECRET 333
+    ============================== */
+
+    const secretOrb =
+      document.getElementById("secretOrb");
+
+    const secretMode =
+      document.getElementById("secretMode");
+
+    const closeSecret =
+      document.getElementById("closeSecret");
+
+    let secretClicks = 0;
+
+    let secretTimer;
+
+
+    secretOrb.addEventListener(
+      "click",
+      () => {
+
+        secretClicks++;
+
+        clearTimeout(secretTimer);
+
+
+        secretTimer =
+          setTimeout(
+            () => {
+              secretClicks = 0;
+            },
+            1200
+          );
+
+
+        if (
+          secretClicks === 3
+        ) {
+
+          secretMode.classList.add(
+            "active"
+          );
+
+          document.body.classList.add(
+            "secret-active"
+          );
+
+          secretClicks = 0;
+
+        }
+
+      }
+    );
+
+
+    closeSecret.addEventListener(
+      "click",
+      () => {
+
+        secretMode.classList.remove(
+          "active"
+        );
+
+        document.body.classList.remove(
+          "secret-active"
+        );
+
+      }
+    );
+
+
+    /* ==============================
+       MOON PARALLAX
+    ============================== */
+
+    const moonSystem =
+      document.querySelector(
+        ".moon-system"
+      );
+
+
+    document.addEventListener(
+      "pointermove",
+      event => {
+
+        if (!moonSystem) return;
+
+
+        const x =
+          (
+            event.clientX /
+            window.innerWidth -
+            0.5
+          ) * 2;
+
+
+        const y =
+          (
+            event.clientY /
+            window.innerHeight -
+            0.5
+          ) * 2;
+
+
+        moonSystem.style.transform =
+          `translate(${x * 8}px, ${y * 8}px)`;
+
+      }
+    );
+
+
+    /* ==============================
+       RANDOM SPACE DUST
+    ============================== */
+
+    const dust =
+      document.querySelector(".dust");
+
+
+    for (
+      let i = 0;
+      i < 55;
+      i++
+    ) {
+
+      const particle =
+        document.createElement("i");
+
+      particle.style.left =
+        Math.random() * 100 + "%";
+
+      particle.style.top =
+        Math.random() * 100 + "%";
+
+      particle.style.animationDelay =
+        Math.random() * 8 + "s";
+
+      particle.style.animationDuration =
+        4 + Math.random() * 8 + "s";
+
+      dust.appendChild(particle);
+
+    }
+
+
+  </script>
+
+</body>
+
+            </html>    <div class="card-cover">
 
             <img
               src="assets/covers/cover-05.webp"
